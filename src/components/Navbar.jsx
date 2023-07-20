@@ -22,7 +22,7 @@ const Navbar = () => {
           <img
             src={profileImg}
             alt="profileImg"
-            className="w-9 ml-8 h-9 object-contain"
+            className="w-9 ml-8 h-9 object-contain cursor-pointer"
           />
         </Link>
 

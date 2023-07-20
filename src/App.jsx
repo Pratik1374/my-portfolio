@@ -3,12 +3,10 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { BrowserRouter } from "react-router-dom";
 import Skills from "./pages/Skills";
+import Work from "./pages/Work";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
       <div className="w-full h-auto">
         <Navbar />
@@ -16,6 +14,7 @@ function App() {
         <Home />
         <About />
         <Skills/>
+        <Work/>
       </div>
       </div>
   );

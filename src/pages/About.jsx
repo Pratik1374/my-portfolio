@@ -70,9 +70,9 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="py-20 text-white" ref={aboutRef}>
+    <section id="about" className="my-bg-dark-gradient py-20 text-white" ref={aboutRef}>
       <div className="flex flex-col justify-center items-center mx-2">
-        <p className="text-3xl mb-4 underline underline-offset-4 text-cyan-300 ">
+        <p className="text-3xl mb-4 underline underline-offset-4 text-cyan-300 font-extrabold">
           About Me
         </p>
         <motion.div
@@ -89,7 +89,7 @@ const About = () => {
             },
           }}
         >
-          <div className="text-xl mt-4 rounded-md mx-4 p-10 about-card">
+          <div className="text-xl mt-4 rounded-md mx-4 p-4 md:p-10 about-card">
             Welcome to my portfolio! I am a passionate and dedicated developer
             who thrives on creating impactful solutions that shape the world
             around us. With a strong foundation in MERN stack web development, I

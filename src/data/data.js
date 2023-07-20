@@ -1,3 +1,6 @@
+import {android, backend, database, mernStack, } from '../assets'
+import { frontend } from '../assets';
+
 export const navLinks = [
   {
     id: "home",
@@ -26,31 +29,27 @@ export const mySkills = [
     title: "Full Stack Web Development",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    imagePath: "",
+    image: mernStack,
     subdomains: [
       {
         title: "MongoDB",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "Express",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "React",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "Node",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
     ],
   },
@@ -58,25 +57,22 @@ export const mySkills = [
     title: "Frontend Development",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    imagePath: "",
+    image: frontend,
     subdomains: [
       {
         title: "React JS",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "Tailwind CSS",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "Bootstrap",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
     ],
   },
@@ -84,25 +80,22 @@ export const mySkills = [
     title: "Backend Development",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    imagePath: "",
+    image: backend,
     subdomains: [
       {
         title: "MongoDB",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "Express",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "Node",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
     ],
   },
@@ -110,13 +103,12 @@ export const mySkills = [
     title: "Android Development",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    imagePath: "",
+    image: android,
     subdomains: [
       {
         title: "Firebase",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
     ],
   },
@@ -124,20 +116,35 @@ export const mySkills = [
     title: "Database Management",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    imagePath: "",
+    image: database,
     subdomains: [
       {
         title: "NoSQL",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
       {
         title: "SQL",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-        imagePath: "",
       },
     ],
   },
 ];
+
+export const myWork = [
+  {
+    title: "Ecommerce App",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
+    image: "profileImg.jpg",
+    githubLink: "",
+    liveLink: "",
+  },
+  {
+    title: "News App",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
+    image: "profileImg.jpg",
+    githubLink: "",
+    liveLink: "",
+  },
+]

@@ -9,12 +9,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #3c63ed;
+  background: #6d8cfc;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #4e4c4c;
   border-radius: 5px;
 }
 
