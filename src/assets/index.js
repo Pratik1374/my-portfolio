@@ -7,6 +7,8 @@ import frontend from './frontend.png'
 import backend from './backend.png'
 import android from './android.png'
 import database from './database.png'
+import github from './github.svg'
+import live from './live.png'
 
 export {
     menu,
@@ -18,4 +20,6 @@ export {
     backend,
     android,
     database,
+    github,
+    live,
 };

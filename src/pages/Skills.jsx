@@ -13,7 +13,7 @@ const Skills = () => {
         </p>
         <div className="mx-2 flex flex-wrap justify-center mt-3">
           {mySkills.map((skill) => (
-            <div className="flex flex-col justify-center items-center m-2 animate-pulse hover:animate-none cursor-pointer">
+            <div key={skill.title} className="flex flex-col justify-center items-center m-2 animate-pulse hover:animate-none cursor-pointer">
               <img
                 src={skill.image}
                 alt=""
@@ -30,7 +30,7 @@ const Skills = () => {
                   Sub-domains in this field that I have learned : 
                 </p>
                 {skill.subdomains.map((subdomain) => (
-                  <div className="ml-4 flex items-center group">
+                  <div key={subdomain.title} className="ml-4 flex items-center group">
                     <div className="flex flex-col items-center">
                       <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]"></span>
                       <span className="rounded-full h-[15px] w-[15px] border-purple-600 border-[1.5px] group-hover:bg-purple-600"></span>

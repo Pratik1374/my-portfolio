@@ -32,17 +32,20 @@
 }
 
 .my-bg-dark-gradient {
-  /* background: linear-gradient(
-    109.6deg,
-    rgb(20, 30, 48) 11.2%,
-    rgb(36, 59, 85) 91.1%
-  ); */
-
   background: linear-gradient(
     109.6deg,
     rgb(0, 6, 16) 11.2%,
     rgb(0, 5, 72) 91.1%
   );
+}
+
+.my-bg-bright-gradient {
+  background: linear-gradient(
+    109.6deg,
+    rgb(32, 38, 48) 11.2%, /* Slightly brighter than original rgb(0, 6, 16) */
+    rgb(32, 37, 132) 91.1% /* Slightly brighter than original rgb(0, 5, 72) */
+  );
+  box-shadow: rgba(214, 131, 249, 0.35) 0px 5px 15px;
 }
 
 .about-card {
@@ -66,6 +69,20 @@
     to right,
     #434343,
     #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.my-bg-black-gradient{
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #352b2b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #262222,
+    #434343
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

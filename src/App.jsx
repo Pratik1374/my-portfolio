@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -8,7 +7,7 @@ import Work from "./pages/Work";
 
 function App() {
   return (
-      <div className="w-full h-auto">
+      <div className="w-full h-auto overflow-x-hidden">
         <Navbar />
       <div className="my-bg-dark-gradient ">
         <Home />

@@ -1,4 +1,4 @@
-import {android, backend, database, mernStack, } from '../assets'
+import {android, backend, database, dummy, mernStack, } from '../assets'
 import { frontend } from '../assets';
 
 export const navLinks = [
@@ -134,16 +134,47 @@ export const mySkills = [
 
 export const myWork = [
   {
+    title: "Personal Portfolio Website",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!dfgdghddddd\nfirst\nsecond",
+    image: dummy,
+    githubLink: "https://github.com/Pratik1374/my-portfolio",
+    liveLink: "https://github.com/Pratik1374/my-portfolio",
+  },
+  {
     title: "Ecommerce App",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    image: "profileImg.jpg",
+    image: dummy,
     githubLink: "",
     liveLink: "",
   },
   {
     title: "News App",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
-    image: "profileImg.jpg",
+    image: dummy,
+    githubLink: "",
+    liveLink: "",
+  },
+]
+
+export const teamWork = [
+  {
+    title: "Personal Portfolio Website1",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!dfgdghddddd\nfirst\nsecond",
+    image: dummy,
+    githubLink: "https://github.com/Pratik1374/my-portfolio",
+    liveLink: "",
+  },
+  {
+    title: "Ecommerce App1",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
+    image: dummy,
+    githubLink: "",
+    liveLink: "",
+  },
+  {
+    title: "News App1",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quod commodi in autem adipisci asperiores ut soluta, culpa veritatis fuga corrupti cupiditate excepturi at, odit voluptates eveniet modi beatae cum!",
+    image: dummy,
     githubLink: "",
     liveLink: "",
   },
