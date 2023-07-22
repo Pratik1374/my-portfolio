@@ -8,7 +8,7 @@ const Work = () => {
   const [isFlippedArray, setIsFlippedArray] = useState(myWork.map(() => false));
   const [isFlippedArrayTeam, setIsFlippedArrayTeam] = useState(teamWork.map(() => false));
 
-  // Function to toggle the flip state of a specific card
+
   const handleFlip = (index) => {
     const updatedFlippedArray = [...isFlippedArray];
     updatedFlippedArray[index] = !updatedFlippedArray[index];

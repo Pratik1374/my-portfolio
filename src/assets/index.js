@@ -11,6 +11,7 @@ import github from "./github.svg";
 import live from "./live.png";
 import handshake from "./handshake.png";
 import downArrow from "./down_arrow.png";
+import resumePDF from "./Resume.pdf"
 
 export {
   menu,
@@ -26,4 +27,5 @@ export {
   live,
   handshake,
   downArrow,
+  resumePDF,
 };

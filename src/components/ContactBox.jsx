@@ -24,7 +24,7 @@ const ContactBox = () => {
       </a>
 
       <a
-        href="https://github.com/Pratik1374/"
+        href="https://www.linkedin.com/in/pratik-jadhav-7a969920b"
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"

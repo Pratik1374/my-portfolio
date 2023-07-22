@@ -9,7 +9,8 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #6d8cfc;
+  /* background: #6d8cfc; */
+  background: #aff3f1;
 }
 
 /* Handle */
@@ -39,14 +40,6 @@
   );
 }
 
-.my-bg-bright-gradient {
-  background: linear-gradient(
-    109.6deg,
-    rgb(32, 38, 48) 11.2%, /* Slightly brighter than original rgb(0, 6, 16) */
-    rgb(32, 37, 132) 91.1% /* Slightly brighter than original rgb(0, 5, 72) */
-  );
-  box-shadow: rgba(214, 131, 249, 0.35) 0px 5px 15px;
-}
 
 .about-card {
   background: linear-gradient(
@@ -59,42 +52,34 @@
 }
 
 .black-gradient {
-  background: #000000; /* fallback for old browsers */
+  background: #000000;
   background: -webkit-linear-gradient(
     to right,
     #434343,
     #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #434343,
     #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 }
 
 .my-bg-black-gradient{
-  background: #000000; /* fallback for old browsers */
+  background: #000000; 
   background: -webkit-linear-gradient(
     to right,
     #434343,
     #352b2b
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #262222,
     #434343
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
 }
 
 .violet-gradient {
-  /* background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(
-    -90deg,
-    #804dee 0%,
-    rgba(100, 133, 233, 0) 100%
-  ); */
-
   background: rgb(97, 226, 235);
   background: linear-gradient(
     180deg,
@@ -102,4 +87,15 @@
     rgba(67, 121, 192, 0.854954481792717) 22%,
     rgba(97, 226, 235, 1) 88%
   );
+
+}
+
+.my-tagline-bg{
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 1, 96) 11.2%,
+    rgb(11, 15, 76) 91.1%
+  );
+
+  box-shadow: rgba(5, 255, 251, 0.35) 1px 5px 15px 3px;
 }
