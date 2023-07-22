@@ -38,7 +38,7 @@ const Work = () => {
             <div className="mx-2 flex flex-wrap justify-center mt-3">
               {myWork.map((work, index) => (
                 <div className="flex flex-col items-center m-2">
-                <div className="flex text-black -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlip(index)} >Flip</div>
+                <div className="flex text-black -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlip(index)} >Click here to Flip</div>
                 <ReactCardFlip
                   key={work.title}
                   isFlipped={isFlippedArray[index]}
@@ -114,7 +114,7 @@ const Work = () => {
             <div className="mx-2 flex flex-wrap justify-center mt-3">
               {teamWork.map((work, index) => (
                 <div className="flex flex-col items-center m-2">
-                <div className="flex text-black -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlipTeam(index)} >Flip</div>
+                <div className="flex text-black -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlipTeam(index)} >Click here to Flip</div>
                 <ReactCardFlip
                   key={work.title}
                   isFlipped={isFlippedArrayTeam[index]}

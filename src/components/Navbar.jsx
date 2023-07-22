@@ -9,7 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
 
   return (
-    <nav className="h-[70px] w-full flex items-center py-5 sticky top-0 z-20 bg-[#141829]  font-semibold ">
+    <nav className="h-[70px] w-full flex items-center py-5 fixed top-0 z-20 bg-[#141829]  font-semibold ">
       <div className="w-full flex justify-between items-center max-w-7xl mx-2">
         <Link
           to="/"

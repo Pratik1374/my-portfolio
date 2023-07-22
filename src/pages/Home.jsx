@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="my-bg-dark-gradient text-white relative w-full h-[700px] md:h-[500px] mx-auto pb-20 flex flex-wrap items-center "
+      className="my-bg-dark-gradient text-white relative w-full h-[700px] md:h-[500px] mx-auto py-20 flex flex-wrap items-center "
     >
       <div className="w-full h-1/2 md:w-1/2 flex justify-center items-center">
         <img src={profileImg} alt="" className="w-[300px] h-[300px]" />
