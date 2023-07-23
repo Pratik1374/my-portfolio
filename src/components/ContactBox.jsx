@@ -4,12 +4,13 @@ import { SiGithub, SiGmail } from "react-icons/si";
 
 const ContactBox = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-10">
       <a
         href="https://github.com/Pratik1374/"
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"
+        style={{boxShadow: "0px 2px 28px 1px rgba(83,229,242,1)"}}
       >
         <SiGithub />
       </a>
@@ -19,6 +20,7 @@ const ContactBox = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"
+        style={{boxShadow: "0px 2px 28px 1px rgba(83,229,242,1)"}}
       >
         <SiGmail />
       </a>
@@ -28,6 +30,7 @@ const ContactBox = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"
+        style={{boxShadow: "0px 2px 28px 1px rgba(83,229,242,1)"}}
       >
         <FaLinkedinIn />
       </a>

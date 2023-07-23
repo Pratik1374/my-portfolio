@@ -29,16 +29,16 @@ const Work = () => {
         </p>
         <div className="mx-2 flex flex-col justify-center mt-3">
           <div className="flex justify-center">
-            <p className="text-lg text-cyan-400 font-semibold outline-sky-800 outline-dashed p-1">
+            <p className="text-lg text-cyan-400 font-semibold outline-sky-800 outline-dashed p-1 my-2">
               Personal Projects
             </p>
           </div>
 
           <div className="flex flex-wrap">
-            <div className="mx-2 flex flex-wrap justify-center mt-3">
+            <div className="mx-2 flex flex-wrap gap-3 gap-y-8 justify-center mt-3">
               {myWork.map((work, index) => (
                 <div className="flex flex-col items-center m-2">
-                <div className="flex text-black -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlip(index)} >Click here to Flip</div>
+                <div className="flex text-black h-9 items-center -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlip(index)} >Click here to Flip</div>
                 <ReactCardFlip
                   key={work.title}
                   isFlipped={isFlippedArray[index]}
@@ -105,16 +105,16 @@ const Work = () => {
         </div>
         <div className="mx-2 flex flex-col justify-center mt-8">
           <div className="flex justify-center">
-            <p className="text-lg text-cyan-400 font-semibold outline-sky-800 outline-dashed p-1">
+            <p className="text-lg text-cyan-400 font-semibold outline-sky-800 outline-dashed p-1 my-2">
               Group Projects
             </p>
           </div>
 
           <div className="flex flex-wrap">
-            <div className="mx-2 flex flex-wrap justify-center mt-3">
+            <div className="mx-2 flex flex-wrap gap-3 gap-y-8 justify-center mt-3">
               {teamWork.map((work, index) => (
                 <div className="flex flex-col items-center m-2">
-                <div className="flex text-black -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlipTeam(index)} >Click here to Flip</div>
+                <div className="flex text-black h-9 items-center -mb-2.5 cursor-pointer px-7 font-semibold bg-cyan-300 rounded-tl-full rounded-tr-full" onClick={() => handleFlipTeam(index)} >Click here to Flip</div>
                 <ReactCardFlip
                   key={work.title}
                   isFlipped={isFlippedArrayTeam[index]}

@@ -40,6 +40,15 @@
   );
 }
 
+.my-bg-bright-gradient {
+  background: linear-gradient(
+    109.6deg,
+    rgb(32, 38, 48) 11.2%, /* Slightly brighter than original rgb(0, 6, 16) */
+    rgb(32, 37, 132) 91.1% /* Slightly brighter than original rgb(0, 5, 72) */
+  );
+  box-shadow: rgba(214, 131, 249, 0.35) 0px 5px 15px;
+}
+
 
 .about-card {
   background: linear-gradient(

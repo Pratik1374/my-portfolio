@@ -40,7 +40,7 @@ const Home = () => {
           <h1 className="mx-[10px] font-black text-white lg:text-[40px] sm:text-[40px] xs:text-[50px] text-[40px] flex flex-col ">
             <span className="text-[30px] lg:text-[40px]">Hi, I'm </span>
             <div>
-              <span className="text-[#915EFF] text-[30px] lg:text-[40px]">
+              <span className="text-[#915EFF] text-[30px] lg:text-[40px] drop-shadow-lg  shadow-white" style={{textShadow: "1px 1px 19px rgba(143, 53, 255, 1)"}}>
                 {text}
               </span>
               <Cursor
