@@ -12,6 +12,8 @@ import live from "./live.png";
 import handshake from "./handshake.png";
 import downArrow from "./down_arrow.png";
 import resumePDF from "./Resume.pdf"
+import ecommerceAppImage from './Work_Screenshots/Ecommerce_App.jpg'
+import newsAppImage from './Work_Screenshots/NewsApp.jpg'
 
 export {
   menu,
@@ -28,4 +30,6 @@ export {
   handshake,
   downArrow,
   resumePDF,
+  ecommerceAppImage,
+  newsAppImage,
 };

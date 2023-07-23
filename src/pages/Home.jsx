@@ -65,7 +65,7 @@ const Home = () => {
             inspire, engage, and push the boundaries of what's possible."
           </motion.p>
           <div className=" flex justify-center pt-10 lg:pt-20">
-          <button className="bg-cyan-400 text-black font-semibold p-2 rounded-lg" onClick={handleDownload}>Download Resume</button>
+          <button className="bg-cyan-400 text-black font-semibold p-2 rounded-lg  hover:scale-105" onClick={handleDownload}>Download Resume</button>
           </div>
         </div>
       </div>
