@@ -102,9 +102,57 @@
 .my-tagline-bg{
   background: linear-gradient(
     109.6deg,
-    rgb(6, 1, 96) 11.2%,
+    rgb(8, 5, 63) 11.2%,
     rgb(11, 15, 76) 91.1%
   );
-
   box-shadow: rgba(5, 255, 251, 0.35) 1px 5px 15px 3px;
+}
+
+
+.border-animation-div {
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.border-animation-div::before{
+  content: "";
+  background-image: conic-gradient(
+      #1cf2f2 20deg,
+      #1168f5 40deg,
+      transparent 120deg
+  );
+  
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+
+.border-animation-div::after{
+  background: #101010;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 20px 20px 20px #0000008c;
+}
+
+.border-animation-div img {
+  z-index: 1;
+}
+
+@keyframes rotate {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(-360deg);
+  }
 }
