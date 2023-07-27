@@ -6,24 +6,6 @@ import { Element } from "react-scroll";
 import { useState, useEffect, useRef } from "react";
 
 const Contact = () => {
-  // const animationRef = useRef(null);
-  // const [shouldAnimate, setShouldAnimate] = useState(false);
-
-  // const handleScroll = () => {
-  //   const elementTopPosition = animationRef.current.getBoundingClientRect().top;
-  //   // Adjust the "300" value to control when the animation should be triggered based on the element's position in the viewport.
-  //   if (elementTopPosition < window.innerHeight - 300) {
-  //     setShouldAnimate(true);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   const handshakeRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -73,3 +55,28 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+// import { motion } from 'framer-motion';
+// import Bubbles from '../components/Bubbles';
+
+// const Contact = () => {
+//   return (
+//     // <div className="bubbles-container">
+//     //   <h1>Bubbles Animation</h1>
+//     //   <motion.div
+//     //     className="bubble"
+//     //     initial={{ y: 0, scale: 1, opacity: 1 }}
+//     //     animate={{ y: -200, scale: 0, opacity: 0 }}
+//     //     transition={{ duration: 4, repeat: Infinity }}
+//     //   />
+//     //   {/* Add more bubbles as needed */}
+//     // </div>
+//     <section id='contact'>
+//       {/* Your other components */}
+//       <Bubbles id="unique-bubbles-id"  color="100,200,255" />
+//     </section>
+//   );
+// };
+
+// export default Contact;

@@ -14,6 +14,8 @@ import downArrow from "./down_arrow.png";
 import resumePDF from "./Resume.pdf"
 import ecommerceAppImage from './Work_Screenshots/Ecommerce_App.jpg'
 import newsAppImage from './Work_Screenshots/NewsApp.jpg'
+import promptShare from './Work_Screenshots/promptShare.jpg'
+import attendify from './Work_Screenshots/attendify.jpeg'
 
 export {
   menu,
@@ -32,4 +34,6 @@ export {
   resumePDF,
   ecommerceAppImage,
   newsAppImage,
+  promptShare,
+  attendify,
 };

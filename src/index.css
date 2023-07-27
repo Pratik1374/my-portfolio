@@ -156,3 +156,37 @@
       transform: rotate(-360deg);
   }
 }
+
+
+
+
+
+
+
+.bubbles-container {
+  position: relative;
+  width: 200px; /* Adjust the container size as needed */
+  height: 200px; /* Adjust the container size as needed */
+  background-color: #e0e0e0; /* Adjust the background color as needed */
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff; /* Adjust the bubble color as needed */
+  border-radius: 50%;
+  animation: move-bubble 4s infinite;
+}
+
+@keyframes move-bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(0);
+    opacity: 0;
+  }
+}

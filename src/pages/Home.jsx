@@ -3,6 +3,7 @@ import { profileImg } from "../assets";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { resumePDF } from "../assets";
+import Bubbles from "../components/Bubbles";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -27,14 +28,38 @@ const Home = () => {
       });
   };
 
+  const [showBubbles, setShowBubbles] = React.useState(false);
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowBubbles(true);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <section
       id="home"
-      className="my-bg-dark-gradient text-white relative w-full h-[750px] md:h-[600px] mx-auto py-20 flex flex-wrap items-center "
+      className="my-bg-dark-gradient text-white relative w-full h-[100vh] mx-auto py-20 flex flex-wrap items-center "
     >
+      <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          style={{ display: showBubbles ? "block" : "none" }}
+        >
+          <Bubbles id="unique-bubbles-id" color="100,200,255" />
+        </motion.div>
+      </div>
       <div className="w-full h-1/2 md:w-1/2 flex justify-center items-center">
         <div className="border-animation-div w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]">
-        <img src={profileImg} alt="" className="w-[230px] h-[230px] lg:w-[330px] lg:h-[330px] bg-white" />
+          <img
+            src={profileImg}
+            alt=""
+            className="w-[230px] h-[230px] lg:w-[330px] lg:h-[330px] bg-white"
+          />
         </div>
       </div>
       <div className="w-full h-1/2 md:w-1/2 flex">
@@ -71,7 +96,7 @@ const Home = () => {
           </motion.p>
           <div className=" flex justify-center pt-10 lg:pt-20">
             <button
-              className="bg-cyan-400 text-black font-semibold p-2 rounded-lg  hover:scale-105"
+              className="bg-cyan-400 text-black font-semibold p-2 rounded-lg  hover:scale-105 z-10"
               onClick={handleDownload}
             >
               Download Resume
@@ -79,7 +104,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
     </section>
   );
 };

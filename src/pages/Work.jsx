@@ -149,7 +149,7 @@ const Work = () => {
                         key={work.title}
                         src={work.image}
                         alt=""
-                        className="h-[350px] w-[350px] object-fill hover:scale-105"
+                        className="h-[350px] w-[350px] object-fill overflow-auto hover:scale-105"
                       />
                       <p className="uppercase font-bold text-purple-600 my-3">
                         {work.title}
