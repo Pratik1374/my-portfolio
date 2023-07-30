@@ -35,11 +35,11 @@ const About = () => {
           animate={isVisible ? { opacity: 1, scale: 1 } : {}}
           transition={{
             duration: 0.2,
-            ease: [0, 0.71, 0.2, 1.01],
+            ease: [0, 0.1, 0.2, 0.01],
             scale: {
               type: "spring",
-              damping: 5,
-              stiffness: 100,
+              damping: 10,
+              stiffness: 30,
               restDelta: 0.001,
             },
           }}
