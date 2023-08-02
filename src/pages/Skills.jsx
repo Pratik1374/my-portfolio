@@ -52,10 +52,10 @@ const SkillItem = ({ skill }) => (
     <img
       src={skill.image}
       alt=""
-      className="p-0.5 rounded-full h-[70px] w-[70px] border-blue-300 border-2 object-contain"
+      className="p-0.5 rounded-full h-[70px] w-[70px] border-cyan-300 border-2 object-contain"
     />
-    <span className="border-blue-400 border-2 h-[30px] w-[2px] "></span>
-    <div className="rounded-2xl h-[300px] w-[350px] border-blue-400 border-2 overflow-hidden hover:overflow-auto p-2 ">
+    <span className="border-cyan-400 border-2 h-[30px] w-[2px] "></span>
+    <div className="rounded-2xl h-[300px] w-[350px] border-cyan-400 border-2 overflow-hidden hover:overflow-auto p-2">
       <h3 className="mt-3 text-center font-bold text-lg text-purple-600">
         {skill.title}
       </h3>

@@ -58,7 +58,7 @@ const Home = () => {
           <img
             src={profileImg}
             alt=""
-            className="w-[230px] h-[230px] lg:w-[330px] lg:h-[330px] bg-white"
+            className="rounded-sm w-[230px] h-[230px] lg:w-[330px] lg:h-[330px] bg-white"
           />
         </div>
       </div>
