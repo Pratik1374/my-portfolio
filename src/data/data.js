@@ -1,4 +1,4 @@
-import { android, attendify, backend, database, dummy, ecommerceAppImage, mernStack, newsAppImage, promptShare } from "../assets";
+import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mernStack, newsAppImage, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate } from "../assets";
 import { frontend } from "../assets";
 
 export const navLinks = [
@@ -13,6 +13,10 @@ export const navLinks = [
   {
     id: "skills",
     title: "Skills",
+  },
+  {
+    id: "certificates",
+    title: "Certificates",
   },
   {
     id: "work",
@@ -118,19 +122,42 @@ export const mySkills = [
     ],
   },
   {
-    "title": "Database Management",
-    "description": "I am passionate about managing databases to store and retrieve data efficiently for web and mobile applications. I ensure data integrity, performance, and security while working with both SQL and NoSQL databases.",
-    "image": database,
-    "subdomains": [
+    title: "Database Management",
+    description: "I am passionate about managing databases to store and retrieve data efficiently for web and mobile applications. I ensure data integrity, performance, and security while working with both SQL and NoSQL databases.",
+    image: database,
+    subdomains: [
       {
-        "title": "NoSQL",
-        "description": "I have extensive experience with NoSQL databases, which provide flexibility and scalability for handling large volumes of unstructured data. I am proficient in NoSQL database systems like MongoDB, and I use them to design efficient data storage solutions for various projects."
+        title: "NoSQL",
+        description: "I have extensive experience with NoSQL databases, which provide flexibility and scalability for handling large volumes of unstructured data. I am proficient in NoSQL database systems like MongoDB, and I use them to design efficient data storage solutions for various projects."
       },
       {
-        "title": "SQL",
-        "description": "I am well-versed in SQL databases, which offer robust data integrity and support for complex queries. I work with SQL database systems like PostgreSQL, and SQLite to design relational database schemas and optimize data retrieval for web and mobile applications."
+        title: "SQL",
+        description: "I am well-versed in SQL databases, which offer robust data integrity and support for complex queries. I work with SQL database systems like PostgreSQL, and SQLite to design relational database schemas and optimize data retrieval for web and mobile applications."
       }
     ]
+  },
+];
+
+export const myCertificates = [
+  {
+    title: "Web Developer Bootcamp (Udemy)",
+    image: udemyWebDevelopmentCertificate 
+  },
+  {
+    title: "CSI InApp Hackathon",
+    image: csiInAppCertificate,
+  },
+  {
+    title: "Codigo Coding Competition",
+    image: codigoCertificate,
+  },
+  {
+    title: "ADCET Innovation Project Competition",
+    image: adcetCertificate,
+  },
+  {
+    title: "SquidSaga Coding Competition",
+    image: squidSagaCertificate,
   },
 ];
 

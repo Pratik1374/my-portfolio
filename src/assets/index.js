@@ -16,6 +16,11 @@ import ecommerceAppImage from './Work_Screenshots/Ecommerce_App.jpg'
 import newsAppImage from './Work_Screenshots/NewsApp.jpg'
 import promptShare from './Work_Screenshots/promptShare.jpg'
 import attendify from './Work_Screenshots/attendify.jpeg'
+import udemyWebDevelopmentCertificate from './Certificates/Udemy_Web_Development_Certificate.jpg'
+import csiInAppCertificate from './Certificates/CSI_InApp_Certificate.jpg'
+import codigoCertificate from './Certificates/Codigo_2023_Certificate.png'
+import adcetCertificate from './Certificates/ADCET_Innovation_Certificate.jpg'
+import squidSagaCertificate from './Certificates/SquidSaga_2023_Certificate.png'
 
 export {
   menu,
@@ -36,4 +41,9 @@ export {
   newsAppImage,
   promptShare,
   attendify,
+  udemyWebDevelopmentCertificate,
+  csiInAppCertificate,
+  codigoCertificate,
+  adcetCertificate,
+  squidSagaCertificate,
 };

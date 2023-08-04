@@ -52,7 +52,7 @@ const Work = () => {
                   >
                     <div
                       key={work.title}
-                      className="flex items-center h-[300px] w-[350px] p-2 m-2 cursor-pointer justify-center flex-col rounded-lg my-bg-bright-gradient  "
+                      className="flex items-center h-[350px] w-[350px] p-2 m-2 cursor-pointer justify-center flex-col rounded-lg my-bg-bright-gradient  "
                     >
                       <img
                         key={work.title}

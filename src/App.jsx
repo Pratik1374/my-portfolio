@@ -7,6 +7,7 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import AnimatedCursor from "react-animated-cursor";
 import Bubbles from "./components/Bubbles";
+import Certificates from "./pages/Certificates";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Certificates/>
         <Work />
         <Contact />
       </div>
