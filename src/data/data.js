@@ -1,4 +1,4 @@
-import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mernStack, newsAppImage, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate } from "../assets";
+import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mauliSalon, mernStack, newsAppImage, portfolioWebsite, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate } from "../assets";
 import { frontend } from "../assets";
 
 export const navLinks = [
@@ -166,7 +166,7 @@ export const myWork = [
     title: "Personal Portfolio Website",
     description:
       "My personal portfolio website (right before your eyes) showcases my passion for web development, design, and creativity. As a React.js enthusiast, I have crafted this website to provide visitors with a seamless and interactive experience. Leveraging the power of Tailwind CSS, I have designed a visually appealing interface with responsive layouts that adapt to different screen sizes.\nImplemented Using :\n -> React\n -> Tailwind CSS\n -> Framer Motion (for animations)\n",
-    image: dummy,
+    image: portfolioWebsite,
     githubLink: "https://github.com/Pratik1374/my-portfolio",
     liveLink: "https://github.com/Pratik1374/my-portfolio",
   },
@@ -201,8 +201,8 @@ export const teamWork = [
     title: "Mauli Salon Website",
     description:
       "Introducing the stunning online presence of Mauli Salon, a renowned salon nestled in the heart of Sangli. We are thrilled to present the successful completion of this freelance project by our talented team! Our team embarked on an exciting journey to craft a captivating website for Mauli Salon, elevating their brand to new heights in the digital realm. Leveraging the power of cutting-edge technologies, we brought their vision to life with React JS, while ensuring seamless functionality with MongoDB and Node for the backend.\nImplemented Using :\n -> React\n -> Node\n -> Express\n -> MongoDB\n -> JWT based Authentication(for admin login)\n -> Framer Motion (for animations)\n",
-    image: dummy,
-    githubLink: "https://github.com/Pratik1374/my-portfolio",
+    image: mauliSalon,
+    githubLink: "https://github.com/Pratik1374/Mauli_Salon",
     liveLink: "",
   },
   {
@@ -210,7 +210,7 @@ export const teamWork = [
     description:
       "Introducing Attendify, a dynamic Android app that revolutionizes attendance management, leaving behind the hassles of paperwork. Crafted with precision and passion by our team of two, this app stands as a remarkable academic project, seamlessly merging an attractive UI with cutting-edge functionalities. We have utilized Firebase for dynamic data retrieval, ensuring real-time access to attendance records.Moreover, Attendify features an exciting module of face recognition for seamless student identification through their images. Although the face recognition module is currently in progress, we are planning to implement a direct attendance system using this innovative technology.\nImplemented Using :\n -> Android Studio\n -> Java\n -> Firebase\n",
     image: attendify,
-    githubLink: "",
+    githubLink: "https://github.com/Pratik1374",
     liveLink: "",
   },
 ];

@@ -12,7 +12,6 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-2">
         <Link
           to="/"
-          className="flex items-center gap-2"
           onClick={() => {
             setActive("Home");
             window.scrollTo(0, 0);
@@ -21,7 +20,7 @@ const Navbar = () => {
           <img
             src={profileImg}
             alt="profileImg"
-            className="w-9 ml-8 h-9 object-contain cursor-pointer"
+            className="w-9 ml-8 h-9 object-fill cursor-pointer rounded-full"
           />
         </Link>
 

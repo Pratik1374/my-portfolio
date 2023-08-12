@@ -54,11 +54,11 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="w-full h-1/2 md:w-1/2 flex justify-center items-center">
-        <div className="border-animation-div w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]">
+        <div className="lg:mt-4 border-animation-div w-[220px] h-[300px] lg:w-[300px] lg:h-[370px]">
           <img
             src={profileImg}
             alt=""
-            className="rounded-sm w-[230px] h-[230px] lg:w-[330px] lg:h-[330px] bg-white"
+            className="rounded-lg w-[200px] h-[280px] lg:w-[280px] lg:h-[350px] bg-white"
           />
         </div>
       </div>

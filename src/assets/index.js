@@ -1,6 +1,6 @@
 import menu from "./menu.svg";
 import close from "./close.svg";
-import profileImg from "./profileImg.svg";
+import profileImg from "./profileImg.jpg";
 import dummy from "./dummy.jpg";
 import mernStack from "./mernStack.png";
 import frontend from "./frontend.png";
@@ -15,12 +15,15 @@ import resumePDF from "./Resume.pdf"
 import ecommerceAppImage from './Work_Screenshots/Ecommerce_App.jpg'
 import newsAppImage from './Work_Screenshots/NewsApp.jpg'
 import promptShare from './Work_Screenshots/promptShare.jpg'
-import attendify from './Work_Screenshots/attendify.jpeg'
+import attendify from './Work_Screenshots/attendify.jpg'
+import portfolioWebsite from './Work_Screenshots/portfolioWebsite.jpg'
+import mauliSalon from './Work_Screenshots/mauliSalon.jpg'
 import udemyWebDevelopmentCertificate from './Certificates/Udemy_Web_Development_Certificate.jpg'
 import csiInAppCertificate from './Certificates/CSI_InApp_Certificate.jpg'
 import codigoCertificate from './Certificates/Codigo_2023_Certificate.png'
 import adcetCertificate from './Certificates/ADCET_Innovation_Certificate.jpg'
 import squidSagaCertificate from './Certificates/SquidSaga_2023_Certificate.png'
+
 
 export {
   menu,
@@ -46,4 +49,6 @@ export {
   codigoCertificate,
   adcetCertificate,
   squidSagaCertificate,
+  portfolioWebsite,
+  mauliSalon,
 };
