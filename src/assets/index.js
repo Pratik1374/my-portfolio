@@ -1,6 +1,6 @@
 import menu from "./menu.svg";
 import close from "./close.svg";
-import profileImg from "./profileImg.jpg";
+import profileImg from "./profileImg.png";
 import dummy from "./dummy.jpg";
 import mernStack from "./mernStack.png";
 import frontend from "./frontend.png";
