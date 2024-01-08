@@ -100,7 +100,7 @@ const Work = () => {
                     </div>
                     <div
                       key={`${work.title}_back`}
-                      className="flex flex-col h-[300px] w-[350px] p-2 m-2 cursor-pointer  rounded-lg my-bg-bright-gradient overflow-clip hover:overflow-auto"
+                      className="flex flex-col h-[350px] w-[350px] p-2 m-2 cursor-pointer  rounded-lg my-bg-bright-gradient overflow-clip hover:overflow-auto"
                     >
                       <p className="uppercase font-bold text-purple-600 text-center">
                         {work.title}
@@ -143,7 +143,7 @@ const Work = () => {
                   >
                     <div
                       key={work.title}
-                      className="flex items-center h-[300px] w-[350px] p-2 m-2 cursor-pointer justify-center flex-col rounded-lg my-bg-bright-gradient  "
+                      className="flex items-center h-[350px] w-[350px] p-2 m-2 cursor-pointer justify-center flex-col rounded-lg my-bg-bright-gradient  "
                     >
                       <img
                         key={work.title}
@@ -171,7 +171,12 @@ const Work = () => {
                           </p>
                         </a>
                         {work.liveLink && (
-                          <a href={work.liveLink} className="flex bg-cyan-400 justify-center items-center rounded-full p-1">
+                          <a
+                            href={work.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex bg-cyan-400 justify-center items-center rounded-full p-1"
+                          >
                             <img
                               src={live}
                               alt=""
@@ -186,7 +191,7 @@ const Work = () => {
                     </div>
                     <div
                       key={`${work.title}_back`}
-                      className="flex flex-col h-[300px] w-[350px] p-2 m-2 cursor-pointer  rounded-lg my-bg-bright-gradient overflow-clip hover:overflow-auto"
+                      className="flex flex-col h-[350px] w-[350px] p-2 m-2 cursor-pointer  rounded-lg my-bg-bright-gradient overflow-clip hover:overflow-auto"
                     >
                       <p className="uppercase font-bold text-purple-600 text-center">
                         {work.title}

@@ -1,4 +1,4 @@
-import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mauliSalon, mernStack, newsAppImage, portfolioWebsite, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate } from "../assets";
+import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mauliSalon, mernStack, newsAppImage, portfolioWebsite, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate, sihCertificate } from "../assets";
 import { frontend } from "../assets";
 
 export const navLinks = [
@@ -140,6 +140,10 @@ export const mySkills = [
 
 export const myCertificates = [
   {
+    title: "SIH 2023 Finalist",
+    image: sihCertificate 
+  },
+  {
     title: "Web Developer Bootcamp (Udemy)",
     image: udemyWebDevelopmentCertificate 
   },
@@ -203,7 +207,7 @@ export const teamWork = [
       "Introducing the stunning online presence of Mauli Salon, a renowned salon nestled in the heart of Sangli. We are thrilled to present the successful completion of this freelance project by our talented team! Our team embarked on an exciting journey to craft a captivating website for Mauli Salon, elevating their brand to new heights in the digital realm. Leveraging the power of cutting-edge technologies, we brought their vision to life with React JS, while ensuring seamless functionality with MongoDB and Node for the backend.\nImplemented Using :\n -> React\n -> Node\n -> Express\n -> MongoDB\n -> JWT based Authentication(for admin login)\n -> Framer Motion (for animations)\n",
     image: mauliSalon,
     githubLink: "https://github.com/Pratik1374/Mauli_Salon",
-    liveLink: "",
+    liveLink: "https://mauli-salon.onrender.com",
   },
   {
     title: "Attendify Android App",
