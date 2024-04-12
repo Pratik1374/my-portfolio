@@ -1,4 +1,4 @@
-import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mauliSalon, mernStack, newsAppImage, portfolioWebsite, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate, sihCertificate } from "../assets";
+import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mauliSalon, mernStack, newsAppImage, portfolioWebsite, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate, sihCertificate, storyCopilot } from "../assets";
 import { frontend } from "../assets";
 
 export const navLinks = [
@@ -167,12 +167,20 @@ export const myCertificates = [
 
 export const myWork = [
   {
+    title: "Story_Co-Pilot: AI-Powered Platform for Story Writers",
+    description:
+      "Story_Co-Pilot is an AI-powered web platform designed to revolutionize the creative writing process. Recognizing the fragmented workflow writers often face – juggling tools like Word/Docs for writing, ChatGPT/Gemini for AI ideation, and Midjourney/Stable Diffusion for image generation –  Story_Co-Pilot unifies these core functions. The platform features a rich text editor integrated with Gemini LLM for seamless AI assistance, along with image generation capabilities, all within a single, streamlined interface.\nFrontend technologies :\n -> NextJS\n -> Tailwind CSS\n -> Typescript\n -> Framer Motion\n -> NextUI\n -> Firebase Authentication\n \nBackend technologies :\n -> NodeJS\n -> Express\n -> Typescript\n -> Firebase\n",
+    image: storyCopilot,
+    githubLink: "https://github.com/Pratik1374/Story_Co-Pilot.frontend",
+    liveLink: "https://story-copilot.vercel.app/",
+  },
+  {
     title: "Personal Portfolio Website",
     description:
       "My personal portfolio website (right before your eyes) showcases my passion for web development, design, and creativity. As a React.js enthusiast, I have crafted this website to provide visitors with a seamless and interactive experience. Leveraging the power of Tailwind CSS, I have designed a visually appealing interface with responsive layouts that adapt to different screen sizes.\nImplemented Using :\n -> React\n -> Tailwind CSS\n -> Framer Motion (for animations)\n",
     image: portfolioWebsite,
     githubLink: "https://github.com/Pratik1374/my-portfolio",
-    liveLink: "https://github.com/Pratik1374/my-portfolio",
+    liveLink: "https://pratik-portfolio-temp.netlify.app/",
   },
   {
     title: "Ecommerce App",
