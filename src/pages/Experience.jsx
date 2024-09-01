@@ -43,7 +43,7 @@ const ExperienceCard = ({ experience }) => {
       <p className="text-gray-400 text-sm mt-2">
         {experience.company} • {experience.duration}{" "}
       </p>
-      <ul className="list-disc list-inside text-gray-300 text-sm mt-4">
+      <ul className="list-disc ml-4 text-gray-300 text-sm mt-4">
         {experience.description.map((point, index) => (
           <li key={index}>{point}</li>
         ))}
@@ -53,7 +53,7 @@ const ExperienceCard = ({ experience }) => {
           href={experience.appLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:underline mt-2 inline-block"
+          className="text-blue-500 hover:underline mt-2 inline-block text-sm"
         >
           View App
         </a>

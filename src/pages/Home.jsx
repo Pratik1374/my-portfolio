@@ -53,16 +53,8 @@ const Home = () => {
           <Bubbles id="unique-bubbles-id" color="100,200,255" />
         </motion.div>
       </div>
-      <div className="w-full h-1/2 md:w-1/2 flex justify-center items-center">
-        <div className="lg:mt-4 border-animation-div w-[220px] h-[300px] lg:w-[300px] lg:h-[370px]">
-          <img
-            src={profileImg}
-            alt=""
-            className="rounded-lg w-[200px] h-[280px] lg:w-[280px] lg:h-[350px] bg-white"
-          />
-        </div>
-      </div>
-      <div className="w-full h-1/2 md:w-1/2 flex">
+      
+      <div className="w-full h-1/2 flex items-center justify-center">
         <div className="flex flex-col ">
           <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[40px] xs:text-[50px] text-[40px] flex flex-col ">
             <span className="text-[30px] lg:text-[40px]">Hi, I'm </span>
@@ -74,9 +66,9 @@ const Home = () => {
                 {text}
               </span>
               <Cursor
-                cursorBlinking="false"
+                cursorBlinking={false}
                 cursorStyle="|"
-                cursorColor="#ff014f"
+                cursorColor="#a44aff"
               />
             </div>
           </h1>
@@ -88,7 +80,7 @@ const Home = () => {
               ease: "linear",
             }}
             initial={{ opacity: 0, scale: 0.5 }}
-            className=" p-2 my-tagline-bg mx-[20px] mt-4 rounded-md"
+            className=" p-2 my-tagline-bg mx-[20px] mt-4 rounded-md max-w-[600px]"
           >
             "Coding is my canvas, and technology is my palette. Through lines of
             code and pixels of innovation, I paint immersive digital worlds that

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState }  from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { mySkills } from "../data/data";
 import { motion } from "framer-motion";
 
@@ -60,29 +60,35 @@ const SkillItem = ({ skill }) => (
         {skill.title}
       </h3>
       <p className="m-3">{skill.description}</p>
-      <p className="ml-3 mb-2">Sub-domains in this field that I have learned:</p>
-      {skill.subdomains.map((subdomain) => (
-        <div key={subdomain.title} className="ml-4 flex items-center group">
-          <div className="flex flex-col items-center">
-            <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]" />
-            <span className="rounded-full h-[15px] w-[15px] border-purple-600 border-[1.5px] group-hover:bg-purple-600" />
-            <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]" />
-          </div>
-          <span className="h-[2px] w-[15px] border-purple-600 border-[1.5px]" />
-          <div className="relative">
-            <p className="ml-2 group-hover:text-purple-400 group-hover:font-extrabold">
-              {subdomain.title}
-            </p>
-            <div
-              className="flex invisible w-[250px] top-7 left-2 
+      {skill?.subdomains.length > 0 && (
+        <>
+          <p className="ml-3 mb-2">
+            Sub-domains in this field that I have learned:
+          </p>
+          {skill.subdomains.map((subdomain) => (
+            <div key={subdomain.title} className="ml-4 flex items-center group">
+              <div className="flex flex-col items-center">
+                <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]" />
+                <span className="rounded-full h-[15px] w-[15px] border-purple-600 border-[1.5px] group-hover:bg-purple-600" />
+                <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]" />
+              </div>
+              <span className="h-[2px] w-[15px] border-purple-600 border-[1.5px]" />
+              <div className="relative">
+                <p className="ml-2 group-hover:text-purple-400 group-hover:font-extrabold">
+                  {subdomain.title}
+                </p>
+                <div
+                  className="flex invisible w-[250px] top-7 left-2 
                         absolute group-hover:visible bg-violet-400 z-10 
                         text-black p-2 border-2 rounded-lg"
-            >
-              {subdomain.description}
+                >
+                  {subdomain.description}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ))}
+          ))}
+        </>
+      )}
     </div>
   </div>
 );
@@ -106,7 +112,6 @@ const Skills = () => {
         </p>
       </div>
       <div className="flex w-full justify-center flex-col lg:flex-row lg:justify-around items-center">
-
         <div className="flex w-5/6 flex-col lg:w-1/3">
           {[
             { title: "Javascript", percentage: 85 },

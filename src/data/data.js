@@ -182,13 +182,8 @@ export const mySkills = [
     title: "LLM Integration",
     description:
       "I have experience in integrating Large language models into web applications to leverage the power of AI",
-    image: dummy,
+    image: sihWebsite,
     subdomains: [
-      {
-        title: "LLM Fine-tuning",
-        description:
-          "I have experience in fine-tuning Large Language Models on custom datasets to improve their accuracy and performance for specific domain tasks",
-      },
     ],
   },
 ];
@@ -265,20 +260,12 @@ export const myWork = [
 
 export const teamWork = [
   {
-    title: "Local Document Summarization Website",
+    title: "Local Document Summarization Website (SIH 2023)",
     description:
-      "This project involved fine-tuning a Large Language Model for document summarization and integrating it into a web app using ReactJS(Frontend) and Postgres(Backend).\nImplemented using : \n -> React\n -> Tailwind CSS\n -> Python\n -> Flask\n -> PostgreSQL",
+      "This project, developed during the Smart India Hackathon 2023, involved fine-tuning a Large Language Model for document summarization and integrating it into a web app using ReactJS for the frontend and PostgreSQL for the backend. The web app enables users to efficiently summarize documents with the power of AI..\nImplemented using : \n -> React\n -> Tailwind CSS\n -> Python\n -> Flask\n -> PostgreSQL",
     image: sihWebsite,
     githubLink: "",
     liveLink: "",
-  },
-  {
-    title: "Mauli Salon Website",
-    description:
-      "Introducing the stunning online presence of Mauli Salon, a renowned salon nestled in the heart of Sangli. We are thrilled to present the successful completion of this freelance project by our talented team! Our team embarked on an exciting journey to craft a captivating website for Mauli Salon, elevating their brand to new heights in the digital realm. Leveraging the power of cutting-edge technologies, we brought their vision to life with React JS, while ensuring seamless functionality with MongoDB and Node for the backend.\nImplemented Using :\n -> React\n -> Node\n -> Express\n -> MongoDB\n -> JWT based Authentication(for admin login)\n -> Framer Motion (for animations)\n",
-    image: mauliSalon,
-    githubLink: "https://github.com/Pratik1374/Mauli_Salon",
-    liveLink: "https://mauli-salon.onrender.com",
   },
   {
     title: "Attendify Android App",

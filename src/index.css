@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +12,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   /* background: #6d8cfc; */
-  background: #aff3f1;
+  background: #1c1c1c;
 }
 
 /* Handle */
@@ -33,11 +35,7 @@
 }
 
 .my-bg-dark-gradient {
-  background: linear-gradient(
-    109.6deg,
-    rgb(9, 21, 23) 30%,
-    rgb(0, 1, 14) 70%
-  );
+  background: linear-gradient(109.6deg, rgb(9, 21, 23) 30%, rgb(0, 1, 14) 70%);
   border-bottom: 1px solid rgb(32, 30, 30);
 }
 
@@ -74,10 +72,10 @@
   ); */
 
   background: #000000;
-  -webkit-box-shadow: 0px 0px 63px 6px rgba(121,134,135,1);
--moz-box-shadow: 0px 0px 63px 6px rgba(121,134,135,1);
-box-shadow: 0px 0px 63px 6px rgba(121,134,135,1);
-border: 2px solid gray;
+  -webkit-box-shadow: 0px 0px 63px 6px rgba(121, 134, 135, 1);
+  -moz-box-shadow: 0px 0px 63px 6px rgba(121, 134, 135, 1);
+  box-shadow: 0px 0px 63px 6px rgba(121, 134, 135, 1);
+  border: 2px solid gray;
 }
 
 .my-bg-black-gradient {
@@ -91,7 +89,7 @@ border: 2px solid gray;
   background: linear-gradient(
     150deg,
     rgba(0, 149, 160, 0.838) 8%,
-    rgba(68, 87, 88, 0.855) 22%,
+    rgba(36, 47, 48, 0.855) 22%,
     rgb(0, 0, 0) 88%
   );
 }
@@ -99,10 +97,10 @@ border: 2px solid gray;
 .my-tagline-bg {
   background: linear-gradient(
     109.6deg,
-    rgb(8, 5, 63) 11.2%,
     rgb(11, 15, 76) 91.1%
+    rgb(2, 1, 36) 11.2%,
   );
-  box-shadow: rgba(5, 255, 251, 0.35) 1px 5px 15px 3px;
+  box-shadow: rgba(42, 226, 223, 0.35) 1px 5px 15px 3px;
 }
 
 .border-animation-div {
