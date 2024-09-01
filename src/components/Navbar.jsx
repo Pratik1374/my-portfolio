@@ -24,11 +24,11 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none navbar-desktop flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className=" hover:bg-sky-300 hover:text-white text-black text-[18px] font-medium cursor-pointer  violet-gradient px-[10px] py-[2px] rounded-full "
+              className=" hover:bg-sky-300 hover:text-white text-white text-[16px] font-medium cursor-pointer  violet-gradient px-[20px] py-[5px] rounded-full "
               onClick={() => setActive(nav.title)}
             >
               <Link activeClass="active" to={nav.id} spy={true} smooth={true}  duration={500}>{nav.title}</Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="navbar-mobile flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-1 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-[100%] right-0 mx-4 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (

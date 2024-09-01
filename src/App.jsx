@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import AnimatedCursor from "react-animated-cursor";
 import Bubbles from "./components/Bubbles";
 import Certificates from "./pages/Certificates";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       <div className="my-bg-dark-gradient ">
         <Home />
         <About />
+        <Experience/>
         <Skills />
-        <Certificates/>
         <Work />
+        <Certificates/>
         <Contact />
       </div>
     </div>

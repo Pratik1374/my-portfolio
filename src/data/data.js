@@ -1,4 +1,24 @@
-import { adcetCertificate, android, attendify, backend, codigoCertificate, csiInAppCertificate, database, dummy, ecommerceAppImage, mauliSalon, mernStack, newsAppImage, portfolioWebsite, promptShare, squidSagaCertificate, udemyWebDevelopmentCertificate, sihCertificate, storyCopilot } from "../assets";
+import {
+  adcetCertificate,
+  android,
+  attendify,
+  backend,
+  codigoCertificate,
+  csiInAppCertificate,
+  database,
+  dummy,
+  ecommerceAppImage,
+  mauliSalon,
+  mernStack,
+  newsAppImage,
+  portfolioWebsite,
+  promptShare,
+  squidSagaCertificate,
+  udemyWebDevelopmentCertificate,
+  sihCertificate,
+  storyCopilot,
+  sihWebsite,
+} from "../assets";
 import { frontend } from "../assets";
 
 export const navLinks = [
@@ -13,6 +33,10 @@ export const navLinks = [
   {
     id: "skills",
     title: "Skills",
+  },
+  {
+    id: "experience",
+    title: "Experience",
   },
   {
     id: "certificates",
@@ -55,6 +79,16 @@ export const mySkills = [
         description:
           "I have expertise in Node.js, which allows me to develop server-side applications and APIs. I use it to handle server-side logic, connect with databases, and ensure seamless communication with the frontend.",
       },
+      {
+        title: "NextJS",
+        description:
+          "I have experience using Next.js, a React framework to build performant and SEO-friendly web applications.",
+      },
+      {
+        title: "TypeScript",
+        description:
+          "I utilize TypeScript to enhance code quality, maintainability and build scalable web applications.",
+      },
     ],
   },
   {
@@ -87,19 +121,24 @@ export const mySkills = [
     image: backend,
     subdomains: [
       {
-        title: "MongoDB",
+        title: "Node.js",
         description:
-          "I am well-versed in MongoDB, a powerful NoSQL database, which allows me to create scalable and flexible database schemas. I use MongoDB to manage and store large volumes of data efficiently for web applications.",
+          "I have strong expertise in Node.js, a JavaScript runtime, which enables me to build server-side applications and handle server-side logic. I leverage Node.js to create high-performance and scalable backend solutions for web applications.",
       },
       {
-        title: "Express",
+        title: "Express.js",
         description:
           "I have extensive experience with Express, a fast and minimalist web framework for Node.js. I use Express to build robust and scalable APIs, handle middleware, and implement routing for backend services.",
       },
       {
-        title: "Node",
+        title: "PostgreSQL",
         description:
-          "I have strong expertise in Node.js, a JavaScript runtime, which enables me to build server-side applications and handle server-side logic. I leverage Node.js to create high-performance and scalable backend solutions for web applications.",
+          "I have experience working with PostgreSQL, a powerful relational database system to design and manage databases for web applications",
+      },
+      {
+        title: "Firebase",
+        description:
+          "I have hands-on experience with Firebase, a powerful backend platform for mobile and web applications. I utilize Firebase services like Firestore, Authentication, and Cloud Functions to build real-time and scalable mobile applications.",
       },
     ],
   },
@@ -123,29 +162,45 @@ export const mySkills = [
   },
   {
     title: "Database Management",
-    description: "I am passionate about managing databases to store and retrieve data efficiently for web and mobile applications. I ensure data integrity, performance, and security while working with both SQL and NoSQL databases.",
+    description:
+      "I am passionate about managing databases to store and retrieve data efficiently for web and mobile applications. I ensure data integrity, performance, and security while working with both SQL and NoSQL databases.",
     image: database,
     subdomains: [
       {
         title: "NoSQL",
-        description: "I have extensive experience with NoSQL databases, which provide flexibility and scalability for handling large volumes of unstructured data. I am proficient in NoSQL database systems like MongoDB, and I use them to design efficient data storage solutions for various projects."
+        description:
+          "I have extensive experience with NoSQL databases, which provide flexibility and scalability for handling large volumes of unstructured data. I am proficient in NoSQL database systems like MongoDB, and I use them to design efficient data storage solutions for various projects.",
       },
       {
         title: "SQL",
-        description: "I am well-versed in SQL databases, which offer robust data integrity and support for complex queries. I work with SQL database systems like PostgreSQL, and SQLite to design relational database schemas and optimize data retrieval for web and mobile applications."
-      }
-    ]
+        description:
+          "I am well-versed in SQL databases, which offer robust data integrity and support for complex queries. I work with SQL database systems like PostgreSQL, and SQLite to design relational database schemas and optimize data retrieval for web and mobile applications.",
+      },
+    ],
+  },
+  {
+    title: "LLM Integration",
+    description:
+      "I have experience in integrating Large language models into web applications to leverage the power of AI",
+    image: dummy,
+    subdomains: [
+      {
+        title: "LLM Fine-tuning",
+        description:
+          "I have experience in fine-tuning Large Language Models on custom datasets to improve their accuracy and performance for specific domain tasks",
+      },
+    ],
   },
 ];
 
 export const myCertificates = [
   {
     title: "SIH 2023 Finalist",
-    image: sihCertificate 
+    image: sihCertificate,
   },
   {
     title: "Web Developer Bootcamp (Udemy)",
-    image: udemyWebDevelopmentCertificate 
+    image: udemyWebDevelopmentCertificate,
   },
   {
     title: "CSI InApp Hackathon",
@@ -210,6 +265,14 @@ export const myWork = [
 
 export const teamWork = [
   {
+    title: "Local Document Summarization Website",
+    description:
+      "This project involved fine-tuning a Large Language Model for document summarization and integrating it into a web app using ReactJS(Frontend) and Postgres(Backend).\nImplemented using : \n -> React\n -> Tailwind CSS\n -> Python\n -> Flask\n -> PostgreSQL",
+    image: sihWebsite,
+    githubLink: "",
+    liveLink: "",
+  },
+  {
     title: "Mauli Salon Website",
     description:
       "Introducing the stunning online presence of Mauli Salon, a renowned salon nestled in the heart of Sangli. We are thrilled to present the successful completion of this freelance project by our talented team! Our team embarked on an exciting journey to craft a captivating website for Mauli Salon, elevating their brand to new heights in the digital realm. Leveraging the power of cutting-edge technologies, we brought their vision to life with React JS, while ensuring seamless functionality with MongoDB and Node for the backend.\nImplemented Using :\n -> React\n -> Node\n -> Express\n -> MongoDB\n -> JWT based Authentication(for admin login)\n -> Framer Motion (for animations)\n",
@@ -224,5 +287,35 @@ export const teamWork = [
     image: attendify,
     githubLink: "https://github.com/Pratik1374",
     liveLink: "",
+  },
+];
+
+export const experience = [
+  {
+    company: "ApplyBuddy Technologies",
+    role: "Full Stack Developer Intern",
+    duration: "May 2024 - Present",
+    description: [
+      "Developed 25+ reusable React components and implemented 20+ API endpoints using Node.js and Express, contributing to a robust and scalable SaaS application.",
+      "Enhanced user experience by implementing responsive web pages and components with React, TypeScript, and CSS, adhering to provided UI designs and ensuring cross-device compatibility.",
+      "Improved application performance by implementing Redis for caching and employing frontend caching strategies and debouncing techniques to minimize API calls.",
+      "Elevated code quality and reliability by writing and executing comprehensive test cases using Jest.",
+      "Strengthened application security by implementing a full authentication flow, incorporating JWT and Google OAuth.",
+      "Utilized Storybook for efficient management and documentation of UI components, promoting consistency and reusability across the application.",
+      "Collaborated effectively with the development team using Bitbucket for version control, facilitating seamless project tracking and code collaboration.",
+    ],
+    appLink: "https://applybuddy.co",
+  },
+  {
+    company: "Apt-Tech Solutions",
+    role: "Application Development Intern",
+    duration: "August 2023 - October 2023",
+    description: [
+      "Collaborated on the design and functionality of the Apt-Tech Solutions attendance management app, now with 500+ downloads on the Google Play Store.",
+      "Leveraged Firebase as the primary data storage solution, enabling efficient data storage and real-time updates.",
+      "Led database design and optimization efforts, ensuring data integrity and efficient data storage.",
+    ],
+    appLink:
+      "https://play.google.com/store/apps/details?id=com.wisnolect.apttech",
   },
 ];

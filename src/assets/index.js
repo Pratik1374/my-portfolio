@@ -26,6 +26,7 @@ import squidSagaCertificate from './Certificates/SquidSaga_2023_Certificate.png'
 import sihCertificate from './Certificates/SIH_2023_Certificate.jpg'
 
 import storyCopilot from './Work_Screenshots/story_co-pilot.png'
+import sihWebsite from "./Work_Screenshots/sih-home-page.jpg"
 
 
 export {
@@ -55,5 +56,6 @@ export {
   portfolioWebsite,
   mauliSalon,
   sihCertificate,
-  storyCopilot
+  storyCopilot,
+  sihWebsite
 };
