@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="w-full h-auto overflow-x-hidden">
       <Navbar />
-      <div className="my-bg-dark-gradient ">
+      <div className="my-bg-dark-gradient">
         <Home />
         <About />
         <Experience/>

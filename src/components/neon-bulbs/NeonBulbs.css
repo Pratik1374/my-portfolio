@@ -1,0 +1,76 @@
+.bulb-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+.bulb-container {
+  position: absolute;
+  top: 0;
+}
+
+.cable {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+.bulb {
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  to {
+    box-shadow: 0 0 20px rgb(221, 238, 255), 0 0 40px rgb(221, 238, 255),
+      0 0 60px rgb(221, 238, 255);
+    background-color: rgb(221, 238, 255);
+  }
+}
+
+@media (max-width: 1024px) {
+  .bulb-container-wrapper {
+    height: 220px;
+  }
+  .bulb-container .bulb {
+    width: 80%;
+    height: 80%;
+  }
+  .cable {
+    width: 1.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bulb-container-wrapper {
+    height: 180px;
+  }
+  .bulb-container .bulb {
+    width: 70%;
+    height: 70%;
+  }
+  .cable {
+    width: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bulb-container-wrapper {
+    height: 150px;
+  }
+  .bulb-container .bulb {
+    width: 60%;
+    height: 60%;
+  }
+  .cable {
+    width: 0.8px;
+  }
+}

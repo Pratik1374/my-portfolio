@@ -23,10 +23,10 @@ const Work = () => {
   };
 
   return (
-    <section id="work" className="my-bg-dark-gradient py-20">
+    <section id="projects" className="my-bg-dark-gradient py-20">
       <div className="flex flex-col justify-center items-center mx-2">
         <p className="text-3xl mb-4 underline underline-offset-4 text-cyan-300 font-extrabold">
-          Work
+          Projects
         </p>
         <div className="mx-2 flex flex-col justify-center mt-3">
           <div className="flex justify-center">

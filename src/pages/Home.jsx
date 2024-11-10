@@ -4,6 +4,10 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { resumePDF } from "../assets";
 import Bubbles from "../components/Bubbles";
+import NeonBulbs from "../components/neon-bulbs/NeonBulbs";
+import NeuralNetworkBackground from "../components/temp";
+import semicircleGlowImg from "../assets/semicircle-glow.png"
+import NeonBackground from "../components/temp";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -41,20 +45,15 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="my-bg-dark-gradient text-white relative w-full h-[100vh] mx-auto py-20 flex flex-wrap items-center "
+      className="my-bg-dark-gradient text-white relative w-full flex justify-center items-center "
     >
-      <div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          style={{ display: showBubbles ? "block" : "none" }}
-        >
-          <Bubbles id="unique-bubbles-id" color="100,200,255" />
-        </motion.div>
+      <div className="absolute top-0 left-0 w-[900px] h-[900px] -translate-x-[45%] -translate-y-[50%] rotate-[135deg]">
+        <img src={semicircleGlowImg} alt="" className="w-full h-full"/>
       </div>
-      
-      <div className="w-full h-1/2 flex items-center justify-center">
+
+      <NeonBackground/>
+    
+      <div className="flex items-center justify-center mt-[200px] md:mt-[50px] z-50">
         <div className="flex flex-col ">
           <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[40px] xs:text-[50px] text-[40px] flex flex-col ">
             <span className="text-[30px] lg:text-[40px]">Hi, I'm </span>
