@@ -1,81 +1,101 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { experience } from "../data/data";
-import { motion } from "framer-motion";
-
-const ExperienceCard = ({ experience }) => {
-  const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: isVisible ? 0 : 50, opacity: isVisible ? 1 : 0 }}
-      transition={{ duration: 0.5, delay: isVisible ? 0.5 : 0 }}
-      className="relative w-full lg:w-[45%]  my-bg-dark-gradien p-6 rounded-lg my-4 shadow-lg hover:shadow-cyan-800 cursor-pointer"
-    >
-      <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-cyan-500 to-transparent rounded-l-lg"></div>
-
-      <h3 className="text-xl font-bold text-white">{experience.role}</h3>
-      <p className="text-gray-400 text-sm mt-2">
-        {experience.company} • {experience.duration}{" "}
-      </p>
-      <ul className="list-disc ml-4 text-gray-300 text-sm mt-4">
-        {experience.description.map((point, index) => (
-          <li key={index}>{point}</li>
-        ))}
-      </ul>
-      {experience.appLink && (
-        <a
-          href={experience.appLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline mt-2 inline-block text-sm"
-        >
-          View App
-        </a>
-      )}
-    </motion.div>
-  );
-};
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const Experience = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, threshold: 0.2 });
+  const lineControls = useAnimation();
+
+  const lineVariants = {
+    hidden: { height: 0, opacity: 0 },
+    visible: { height: "calc(100% - 20px)", opacity: 1 },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      lineControls.start("visible");
+    } else {
+      lineControls.start("hidden");
+    }
+  }, [isInView, lineControls]);
+
   return (
-    <section id="experience" className="my-bg-dark-gradient py-20">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col justify-center items-center">
-          <p className="text-3xl mb-4 underline underline-offset-4 text-cyan-300 font-extrabold">
-            Experience
-          </p>
-          <div className="flex flex-wrap justify-center gap-12">
-            {experience.map((exp) => (
-              <ExperienceCard key={exp.role} experience={exp} />
-            ))}
-          </div>
-        </div>
+    <section id="experience" className="container py-10">
+      <h2 className="text-4xl font-bold text-center text-purple-500 mb-12">
+        Experience
+      </h2>
+
+      <div className="relative ml-[12px]" ref={ref}>
+        {experience.map((exp, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: -50 }} // Change x to y for vertical animation
+            animate={isInView ? { opacity: 1, y: 0 } : {}} // Change x to y
+            transition={{
+              duration: (index + 1) * 0.8,
+              ease: "easeOut",
+              delay: index * 0.2,
+            }}
+            className="ml-8 relative -mt-[20px]"
+          >
+            {/* Animated connecting line */}
+            <motion.div
+              className="absolute w-[2px] left-[-0.9rem] top-[20px]"
+              variants={lineVariants}
+              initial="hidden"
+              animate={lineControls}
+              transition={{
+                duration: 1.5, // Increased duration for slower animation
+                delay: index * 0.5, // Reduced delay for smoother staggering
+                ease: "easeInOut", // Smooth easing
+              }}
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(147, 51, 234, 1), rgba(147, 51, 234, 0.5))",
+                filter: "blur(1px)",
+                maskImage:
+                  "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3))",
+              }}
+            />
+
+            <div className="flex items-center mb-2 -ml-[20px]">
+              <motion.div
+                className="w-[12px] h-[12px] bg-purple-500 rounded-full mr-3 neon-dot"
+                whileHover={{ scale: 1.2 }}
+              ></motion.div>
+              <h3 className="text-xl font-semibold text-purple-300 hover:text-purple-300 transition duration-200">
+                {exp.role}
+              </h3>
+            </div>
+            <h4 className="text-lg text-purple-200 mb-1 flex gap-2">
+              {exp.company}
+              <a
+                href={exp.appLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-500 flex items-center space-x-1 hover:text-purple-400 transition duration-200"
+              >
+                <span className="text-xs">View App</span>
+              </a>
+            </h4>
+            <span className="text-sm text-gray-400 italic">{exp.duration}</span>
+            <ul
+              className={`mt-4 ml-5 list-disc space-y-2 ${
+                index != experience.length - 1 ? "pb-12" : ""
+              }`}
+            >
+              {exp.description.map((desc, i) => (
+                <li
+                  key={i}
+                  className="text-sm leading-relaxed hover:text-purple-300 transition duration-200"
+                >
+                  {desc}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
