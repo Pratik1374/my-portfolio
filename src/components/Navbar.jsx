@@ -22,7 +22,7 @@ export const navLinks = [
     id: "skills",
     title: "Skills",
     icon: <FeatherIcon icon="code" size={"20px"} />,
-  }, // Or 'code'
+  },
   {
     id: "projects",
     title: "Projects",
@@ -46,7 +46,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        // Use window.scrollY
         setIsScrolled(true);
         setIsOpen(false);
       } else {
@@ -146,7 +145,7 @@ const Navbar = () => {
                         : index > navLinks.length - 2
                         ? "top-full"
                         : "top-1/2"
-                    } right-full -translate-y-1/2 whitespace-nowrap bg-transparent text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-300 md:group-hover:opacity-100 z-50`}
+                    } right-full -translate-y-1/2 whitespace-nowrap bg-transparent text-white bg-gray-900 border border-purple-200 mr-1 px-2 py-0.5 rounded text-xs opacity-0 transition-opacity duration-300 md:group-hover:opacity-100 z-50`}
                   >
                     {" "}
                     {/* Tooltip */}

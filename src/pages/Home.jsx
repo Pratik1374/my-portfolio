@@ -65,11 +65,11 @@ const Home = () => {
               ease: "linear",
             }}
             initial={{ opacity: 0, scale: 0.5 }}
-            className="p-2 my-tagline-bg mx-[20px] rounded-md max-w-[600px]"
+            className="p-2 my-tagline-bg mx-[20px] rounded-md max-w-[600px] text-center"
           >
-            "Coding is my canvas, and technology is my palette. Through lines of
+            Coding is my canvas, and technology is my palette. Through lines of
             code and pixels of innovation, I paint immersive digital worlds that
-            inspire, engage, and push the boundaries of what's possible."
+            inspire, engage, and push the boundaries of what's possible.
           </motion.p>
           <div className="flex w-full h-full items-center justify-center mt-9">
             <ContactBox />

@@ -202,3 +202,61 @@ body {
 .neon-dot {
   box-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
 }
+
+.section-heading-wrapper {
+  position: relative;
+  margin-bottom: 12; /* Tailwind spacing utility*/
+  display: inline-block;
+  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.2));
+  animation: fadeInUp 1s ease;
+}
+
+.section-heading {
+  @apply text-3xl font-bold text-center py-4 px-8 relative z-10; /*Tailwind classes */
+  color: #e8e9ea; /* Adjust as needed for your theme */
+}
+
+.section-heading-wrapper::before {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[60%] rounded-xl z-0; /*Tailwind*/
+  background: linear-gradient(to right, #bb86fc, #b08bf8);
+}
+
+body.dark-theme .section-heading-wrapper::before {
+  background: linear-gradient(to right, #6200ee, #3700b3);
+}
+
+body.dark-theme .section-heading {
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Neon Effect for Text */
+.neon-text {
+  color: #e0b3ff;
+  text-shadow: 0 0 5px #e0b3ff, 0 0 10px #d4a5ff, 0 0 15px #b57dff;
+}
+
+/* Neon Glow for Skills */
+.neon-skill {
+  box-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7, 0 0 15px #f472b6;
+}
+.neon-skill:hover {
+  box-shadow: 0 0 15px #f472b6, 0 0 25px #f472b6;
+  transform: scale(1.1);
+}
+
+/* Shadow and neon glow for category nodes */
+.shadow-neon {
+  box-shadow: 0 0 5px #c084fc, 0 0 10px #c084fc, 0 0 20px #d8b4fe;
+}

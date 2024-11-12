@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { experience } from "../data/data";
 import { motion, useInView, useAnimation } from "framer-motion";
+import SectionHeading from "../components/SectionHeading";
 
 const Experience = () => {
   const ref = useRef(null);
@@ -8,8 +9,8 @@ const Experience = () => {
   const lineControls = useAnimation();
 
   const lineVariants = {
-    hidden: { height: 0, opacity: 0 },
-    visible: { height: "calc(100% - 20px)", opacity: 1 },
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   };
 
   useEffect(() => {
@@ -21,10 +22,15 @@ const Experience = () => {
   }, [isInView, lineControls]);
 
   return (
-    <section id="experience" className="container py-10">
-      <h2 className="text-4xl font-bold text-center text-purple-500 mb-12">
-        Experience
-      </h2>
+    <section
+      id="experience"
+      className="w-full flex flex-col items-center justify-center"
+    >
+      <SectionHeading
+        title="Experience"
+        subtitle="A journey through my professional milestones and the skills I've honed along the way."
+        icon="briefcase"
+      />
 
       <div className="relative ml-[12px]" ref={ref}>
         {experience.map((exp, index) => (
@@ -37,18 +43,18 @@ const Experience = () => {
               ease: "easeOut",
               delay: index * 0.2,
             }}
-            className="ml-8 relative -mt-[20px]"
+            className="ml-[30px] relative -mt-[20px]"
           >
             {/* Animated connecting line */}
             <motion.div
-              className="absolute w-[2px] left-[-0.9rem] top-[20px]"
+              className="absolute w-[2px] left-[-0.9rem] top-[20px] h-[calc(100%-20px)]"
               variants={lineVariants}
               initial="hidden"
               animate={lineControls}
               transition={{
-                duration: 1.5, // Increased duration for slower animation
-                delay: index * 0.5, // Reduced delay for smoother staggering
-                ease: "easeInOut", // Smooth easing
+                duration: 1.5,
+                delay: index * 0.5,
+                ease: "easeInOut",
               }}
               style={{
                 background:
@@ -61,7 +67,7 @@ const Experience = () => {
 
             <div className="flex items-center mb-2 -ml-[20px]">
               <motion.div
-                className="w-[12px] h-[12px] bg-purple-500 rounded-full mr-3 neon-dot"
+                className="mr-[8px] w-[12px] h-[12px] bg-purple-500 rounded-full neon-dot"
                 whileHover={{ scale: 1.2 }}
               ></motion.div>
               <h3 className="text-xl font-semibold text-purple-300 hover:text-purple-300 transition duration-200">

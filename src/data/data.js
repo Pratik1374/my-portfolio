@@ -183,8 +183,7 @@ export const mySkills = [
     description:
       "I have experience in integrating Large language models into web applications to leverage the power of AI",
     image: sihWebsite,
-    subdomains: [
-    ],
+    subdomains: [],
   },
 ];
 
@@ -280,8 +279,20 @@ export const teamWork = [
 export const experience = [
   {
     company: "ApplyBuddy Technologies",
+    role: "Software Developer",
+    duration: "September 2024 - Present",
+    description: [
+      "Designed and optimized complex SQL queries to enhance data retrieval and management, improving the efficiency of backend operations.",
+      "Enhanced the SEO of the React application by implementing structured data with JSON-LD and using the Helmet package for better metadata management. Optimized images and lazy-loaded content, resulting in better search engine visibility and improved user traffic.",
+      "Worked on algorithms related to text analysis, including sentiment analysis, and applied these algorithms via the ChatGPT API to generate and refine outputs that meet specific requirements.",
+      "Engaged in prompt engineering to optimize API interactions, refining prompts to ensure high-quality and accurate responses, thereby improving overall user satisfaction.",
+    ],
+    appLink: "https://applybuddy.co",
+  },
+  {
+    company: "ApplyBuddy Technologies",
     role: "Full Stack Developer Intern",
-    duration: "May 2024 - Present",
+    duration: "May 2024 - August 2024",
     description: [
       "Developed 25+ reusable React components and implemented 20+ API endpoints using Node.js and Express, contributing to a robust and scalable SaaS application.",
       "Enhanced user experience by implementing responsive web pages and components with React, TypeScript, and CSS, adhering to provided UI designs and ensuring cross-device compatibility.",
