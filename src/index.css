@@ -4,9 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-bg-color: #030014;
+}
+
 body {
   font-family: Bricolage Grotesque, sans-serif;
-  background: #030014;
+  background: var(#030014);
 }
 
 /* width */

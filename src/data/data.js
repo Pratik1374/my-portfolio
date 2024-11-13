@@ -52,138 +52,44 @@ export const navLinks = [
   },
 ];
 
-export const mySkills = [
+export const mySkillsData = [
   {
-    title: "Full Stack Web Development",
+    category: "Frontend Development",
     description:
-      "I specialize in building robust and scalable web applications using the MERN (MongoDB, Express, React, Node) stack. I have experience working with each component of the stack, allowing me to handle both frontend and backend development.",
-    image: mernStack,
-    subdomains: [
-      {
-        title: "MongoDB",
-        description:
-          "I am proficient in MongoDB, a NoSQL database, which enables me to design and manage the database schema efficiently. It allows me to handle large amounts of data and perform complex queries seamlessly.",
-      },
-      {
-        title: "Express",
-        description:
-          "I use Express, a Node.js framework, to build robust and performant APIs for my web applications. It helps me handle routing, middleware, and other backend functionalities with ease.",
-      },
-      {
-        title: "React",
-        description:
-          "I leverage React to build interactive and dynamic user interfaces for web applications. It enables me to create reusable components, manage state efficiently, and deliver smooth user experiences.",
-      },
-      {
-        title: "Node",
-        description:
-          "I have expertise in Node.js, which allows me to develop server-side applications and APIs. I use it to handle server-side logic, connect with databases, and ensure seamless communication with the frontend.",
-      },
-      {
-        title: "NextJS",
-        description:
-          "I have experience using Next.js, a React framework to build performant and SEO-friendly web applications.",
-      },
-      {
-        title: "TypeScript",
-        description:
-          "I utilize TypeScript to enhance code quality, maintainability and build scalable web applications.",
-      },
+      "Crafting beautiful and interactive user interfaces with modern web technologies.",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "JavaScript",
     ],
+    shade: "#8B008B", // Darker purple
   },
   {
-    title: "Frontend Development",
-    description:
-      "I specialize in creating responsive and interactive user interfaces using cutting-edge frontend technologies. I am passionate about delivering seamless user experiences that engage and delight users.",
-    image: frontend,
-    subdomains: [
-      {
-        title: "React JS",
-        description:
-          "I have hands-on experience with React, a popular JavaScript library for building reusable and efficient UI components. I use React to create dynamic and engaging user interfaces for web applications.",
-      },
-      {
-        title: "Tailwind CSS",
-        description:
-          "I am proficient in Tailwind CSS, a utility-first CSS framework, which allows me to rapidly build custom designs with minimal CSS code. It enables me to create beautiful and responsive layouts effortlessly.",
-      },
-      {
-        title: "Bootstrap",
-        description:
-          "I have a strong grasp of Bootstrap, a widely-used CSS framework, to build responsive and mobile-first web designs. Bootstrap empowers me to create visually appealing websites with its pre-built components and styles.",
-      },
+    category: "Backend Development",
+    description: "Building robust and scalable server-side logic and APIs.",
+    skills: [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Firebase",
+      "MongoDB",
+      "SQL",
+      "Redis",
+      "REST API",
+      "GraphQL",
     ],
+    shade: "#9400D3", // Dark Violet
   },
   {
-    title: "Backend Development",
-    description:
-      "As a backend developer, I specialize in building the server-side logic and APIs that power web applications. I enjoy designing and implementing efficient and secure server architectures that handle complex data operations.",
-    image: backend,
-    subdomains: [
-      {
-        title: "Node.js",
-        description:
-          "I have strong expertise in Node.js, a JavaScript runtime, which enables me to build server-side applications and handle server-side logic. I leverage Node.js to create high-performance and scalable backend solutions for web applications.",
-      },
-      {
-        title: "Express.js",
-        description:
-          "I have extensive experience with Express, a fast and minimalist web framework for Node.js. I use Express to build robust and scalable APIs, handle middleware, and implement routing for backend services.",
-      },
-      {
-        title: "PostgreSQL",
-        description:
-          "I have experience working with PostgreSQL, a powerful relational database system to design and manage databases for web applications",
-      },
-      {
-        title: "Firebase",
-        description:
-          "I have hands-on experience with Firebase, a powerful backend platform for mobile and web applications. I utilize Firebase services like Firestore, Authentication, and Cloud Functions to build real-time and scalable mobile applications.",
-      },
-    ],
-  },
-  {
-    title: "Android Development",
-    description:
-      "I am passionate about creating native Android applications that provide seamless experiences for users. I enjoy developing interactive and user-friendly mobile apps that leverage the latest Android technologies.",
-    image: android,
-    subdomains: [
-      {
-        title: "Java",
-        description:
-          "As an Android developer, I am proficient in Java, the primary language used for Android app development. I leverage Java's object-oriented programming capabilities to build robust and efficient Android applications. I use Java to implement the core functionalities of my apps, handle data manipulation, and interact with various Android components.",
-      },
-      {
-        title: "Firebase",
-        description:
-          "I have hands-on experience with Firebase, a powerful backend platform for mobile and web applications. I utilize Firebase services like Firestore, Authentication, and Cloud Functions to build real-time and scalable mobile applications.",
-      },
-    ],
-  },
-  {
-    title: "Database Management",
-    description:
-      "I am passionate about managing databases to store and retrieve data efficiently for web and mobile applications. I ensure data integrity, performance, and security while working with both SQL and NoSQL databases.",
-    image: database,
-    subdomains: [
-      {
-        title: "NoSQL",
-        description:
-          "I have extensive experience with NoSQL databases, which provide flexibility and scalability for handling large volumes of unstructured data. I am proficient in NoSQL database systems like MongoDB, and I use them to design efficient data storage solutions for various projects.",
-      },
-      {
-        title: "SQL",
-        description:
-          "I am well-versed in SQL databases, which offer robust data integrity and support for complex queries. I work with SQL database systems like PostgreSQL, and SQLite to design relational database schemas and optimize data retrieval for web and mobile applications.",
-      },
-    ],
-  },
-  {
-    title: "LLM Integration",
-    description:
-      "I have experience in integrating Large language models into web applications to leverage the power of AI",
-    image: sihWebsite,
-    subdomains: [],
+    category: "Other Skills",
+    description: "A collection of other valuable skills and tools I utilize.",
+    skills: ["Jest", "C++", "Java", "C", "Git", "GitHub", "Bitbucket"],
+    shade: "#DA70D6", // Orchid
   },
 ];
 

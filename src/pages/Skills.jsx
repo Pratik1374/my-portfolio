@@ -1,202 +1,70 @@
-// import React, { useEffect, useRef, useState } from "react";
-// import { mySkills } from "../data/data";
-// import { motion } from "framer-motion";
-
-// const ProgressBar = ({ percentage }) => {
-//   const ref = useRef(null);
-//   const [isVisible, setIsVisible] = useState(false);
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       ([entry]) => {
-//         if (entry.isIntersecting) {
-//           setIsVisible(true);
-//         }
-//       },
-//       {
-//         threshold: 0.1,
-//       }
-//     );
-
-//     if (ref.current) {
-//       observer.observe(ref.current);
-//     }
-
-//     return () => {
-//       if (ref.current) {
-//         observer.unobserve(ref.current);
-//       }
-//     };
-//   }, []);
-
-//   return (
-//     <span className="w-full h-2 bg-white rounded-md inline-flex mt-2" ref={ref}>
-//       <motion.span
-//         initial={{ x: "-100%", opacity: 0 }}
-//         animate={{ x: isVisible ? 0 : "-100%", opacity: isVisible ? 1 : 0 }}
-//         transition={{ duration: 0.5, delay: isVisible ? 0.5 : 0 }}
-//         style={{ width: `${percentage}%` }}
-//         className="h-full bg-gradient-to-r from-blue-600 via-blue-400 to-blue-200 rounded-md relative"
-//       >
-//         <span className="absolute -top-7 right-0">{percentage}%</span>
-//       </motion.span>
-//     </span>
-//   );
-// };
-
-// const SkillItem = ({ skill }) => (
-//   <div
-//     key={skill.title}
-//     className="flex flex-col justify-center items-center m-2 animate-pulse hover:animate-none cursor-pointer"
-//   >
-//     <img
-//       src={skill.image}
-//       alt=""
-//       className="p-0.5 rounded-full h-[70px] w-[70px] border-cyan-300 border-2 object-contain"
-//     />
-//     <span className="border-cyan-400 border-2 h-[30px] w-[2px] "></span>
-//     <div className="rounded-2xl h-[300px] w-[350px] border-cyan-400 border-2 overflow-hidden hover:overflow-auto p-2">
-//       <h3 className="mt-3 text-center font-bold text-lg text-purple-600">
-//         {skill.title}
-//       </h3>
-//       <p className="m-3">{skill.description}</p>
-//       {skill?.subdomains.length > 0 && (
-//         <>
-//           <p className="ml-3 mb-2">
-//             Sub-domains in this field that I have learned:
-//           </p>
-//           {skill.subdomains.map((subdomain) => (
-//             <div key={subdomain.title} className="ml-4 flex items-center group">
-//               <div className="flex flex-col items-center">
-//                 <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]" />
-//                 <span className="rounded-full h-[15px] w-[15px] border-purple-600 border-[1.5px] group-hover:bg-purple-600" />
-//                 <span className="h-[15px] w-[2px] border-purple-600 border-[1.5px]" />
-//               </div>
-//               <span className="h-[2px] w-[15px] border-purple-600 border-[1.5px]" />
-//               <div className="relative">
-//                 <p className="ml-2 group-hover:text-purple-400 group-hover:font-extrabold">
-//                   {subdomain.title}
-//                 </p>
-//                 <div
-//                   className="flex invisible w-[250px] top-7 left-2 
-//                         absolute group-hover:visible bg-violet-400 z-10 
-//                         text-black p-2 border-2 rounded-lg"
-//                 >
-//                   {subdomain.description}
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </>
-//       )}
-//     </div>
-//   </div>
-// );
-
-// const Skills = () => {
-//   return (
-//     <section id="skills" className="my-bg-dark-gradient py-20">
-//       <div className="flex flex-col justify-center items-center mx-2">
-//         <p className="text-3xl mb-4 underline underline-offset-4 text-cyan-300 font-extrabold">
-//           Skills
-//         </p>
-//         <div className="mx-2 flex flex-wrap justify-center mt-3">
-//           {mySkills.map((skill) => (
-//             <SkillItem key={skill.title} skill={skill} />
-//           ))}
-//         </div>
-//       </div>
-//       <div className="flex justify-center my-8">
-//         <p className="text-lg text-cyan-400 font-semibold outline-sky-800 outline-dashed p-1">
-//           Programming Languages and Frameworks
-//         </p>
-//       </div>
-//       <div className="flex w-full justify-center flex-col lg:flex-row lg:justify-around items-center">
-//         <div className="flex w-5/6 flex-col lg:w-1/3">
-//           {[
-//             { title: "Javascript", percentage: 85 },
-//             { title: "C++", percentage: 85 },
-//             { title: "Java", percentage: 75 },
-//             { title: "C", percentage: 65 },
-//             { title: "HTML & CSS", percentage: 80 },
-//           ].map((item) => (
-//             <div key={item.title} className="overflow-x-hidden">
-//               <p className="text-sm uppercase font-medium">{item.title}</p>
-//               <ProgressBar percentage={item.percentage} />
-//             </div>
-//           ))}
-//         </div>
-//         <div className="flex w-5/6 flex-col lg:w-1/3">
-//           {[
-//             { title: "React JS", percentage: 90 },
-//             { title: "Node JS", percentage: 80 },
-//             { title: "Tailwind CSS", percentage: 70 },
-//             { title: "SQL & NoSQL", percentage: 80 },
-//             { title: "Git & GitHub", percentage: 85 },
-//           ].map((item) => (
-//             <div key={item.title} className="overflow-x-hidden">
-//               <p className="text-sm uppercase font-medium">{item.title}</p>
-//               <ProgressBar percentage={item.percentage} />
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Skills;
-
-import React from 'react';
-import SectionHeading from '../components/SectionHeading';
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import SectionHeading from "../components/SectionHeading";
+import { mySkillsData } from "../data/data";
 
 const Skills = () => {
-  const skillsData = [
-    {
-      category: 'Frontend Development',
-      description: 'Crafting beautiful and interactive user interfaces using modern web technologies.',
-      skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Next.js'],
-    },
-    {
-      category: 'Backend Development',
-      description: 'Building robust and scalable server-side logic and APIs.',
-      skills: ['Node.js', 'Express.js', 'Python', 'Django', 'PostgreSQL', 'MongoDB'],
-    },
-    {
-      category: 'Other Skills',
-      description: 'A collection of other valuable skills and tools I utilize.',
-      skills: ['Git', 'Docker', 'Agile Methodologies', 'UI/UX Design', 'Problem Solving'],
-    },
-  ];
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, threshold: 0.2 });
 
   return (
-    <div className="bg-transparent p-8 rounded-lg shadow-lg">
+    <section
+      id="skills"
+      className="w-full flex flex-col items-center justify-center relative"
+    >
       <SectionHeading
         title="Skills"
-        subtitle="temp.."
+        subtitle="The technical foundation behind my work"
         icon="code"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {skillsData.map((category, index) => (
-          <div key={index} className="bg-[#301955] p-6 rounded-lg shadow-md relative">
-            <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gradient-to-r from-[#9400D3] to-[#DA70D6]"></div>
-            <h3 className="text-xl font-semibold text-[#DDA0DD] mb-3">{category.category}</h3>
-            <p className="text-sm text-[#THISTLE] mb-4">{category.description}</p>
-            <ul className="flex flex-wrap gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 px-4 md:px-8 lg:px-12" ref={ref}>
+        {mySkillsData.map((category, index) => (
+          <motion.div
+            key={index}
+            className="relative p-6 rounded-lg shadow-lg bg-opacity-20 bg-black backdrop-blur-md border border-gray-800 transition duration-300 hover:-translate-y-2 group"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+          >
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-transparent via-transparent to-[#201e2e]"></div>
+
+            <h3
+              className="text-2xl font-semibold mb-4 relative z-10 text-shadow-sm"
+              style={{ color: category.shade }}
+            >
+              {category.category}
+            </h3>
+            <p className="text-base text-gray-400 mb-4 leading-relaxed">
+              {category.description}
+            </p>
+
+            <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, skillIndex) => (
-                <li
+                <motion.span
                   key={skillIndex}
-                  className="bg-[#4B0082] text-white px-3 py-1 rounded-md text-sm font-medium shadow-sm hover:bg-[#800080] transition duration-300"
+                  className="inline-block bg-[#2d2d44] px-3 py-1 rounded-md text-sm font-medium text-gray-300 shadow-inner transition duration-300 hover:bg-[#444461] group-hover:text-white group-hover:border-2 group-hover:border-purple-500 group-hover:bg-[#241e2c]"
+                  style={{ border: `1px solid ${category.shade}` }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{
+                    duration: 0.3,
+                    delay: skillIndex * 0.05,
+                    ease: "easeOut",
+                  }}
                 >
                   {skill}
-                </li>
+                </motion.span>
               ))}
-            </ul>
-          </div>
+            </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,11 +1,10 @@
-// SectionHeading.jsx
 import React, { useEffect, useRef } from "react";
 import FeatherIcon from "feather-icons-react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const SectionHeading = ({ title, subtitle, icon }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, threshold: 0.2 });
+  const isInView = useInView(ref, { once: true, threshold: 0.2 });
   const controls = useAnimation();
 
   const containerVariants = {

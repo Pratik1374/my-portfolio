@@ -28,7 +28,7 @@ const Experience = () => {
     >
       <SectionHeading
         title="Experience"
-        subtitle="A journey through my professional milestones and the skills I've honed along the way."
+        subtitle="A journey through my professional milestones"
         icon="briefcase"
       />
 
@@ -36,8 +36,8 @@ const Experience = () => {
         {experience.map((exp, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: -50 }} // Change x to y for vertical animation
-            animate={isInView ? { opacity: 1, y: 0 } : {}} // Change x to y
+            initial={{ opacity: 0, y: -50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
               duration: (index + 1) * 0.8,
               ease: "easeOut",

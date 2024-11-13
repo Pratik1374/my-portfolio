@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="my-bg-dark-gradient text-white relative w-full h-screen max-h-[1000px] flex justify-center items-center "
+      className="text-white relative w-full h-screen md:max-h-[1000px] flex justify-center items-center "
     >
       <div className="absolute top-0 left-0 w-[900px] h-[900px] -translate-x-[45%] -translate-y-[50%] rotate-[135deg]">
         <img src={semicircleGlowImg} alt="" className="w-full h-full" />
@@ -54,7 +54,7 @@ const Home = () => {
 
       <div className="flex items-center justify-center mt-[100px] md:mt-[50px] z-50">
         <div className="flex flex-col gap-2 items-center justify-center">
-          <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[40px] xs:text-[50px] text-[40px] flex flex-col">
+          <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] flex flex-col">
             {text}
           </h1>
           <motion.p
@@ -65,7 +65,7 @@ const Home = () => {
               ease: "linear",
             }}
             initial={{ opacity: 0, scale: 0.5 }}
-            className="p-2 my-tagline-bg mx-[20px] rounded-md max-w-[600px] text-center"
+            className="p-2 my-tagline-bg rounded-md max-w-[600px] text-center"
           >
             Coding is my canvas, and technology is my palette. Through lines of
             code and pixels of innovation, I paint immersive digital worlds that
