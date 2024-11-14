@@ -223,3 +223,8 @@ export const experience = [
       "https://play.google.com/store/apps/details?id=com.wisnolect.apttech",
   },
 ];
+
+export  const achievements = [
+  { text: "Finalist - Smart India Hackathon 2023", icon: "shield" },
+  { text: "1st Place - Braint-It-On 2.0 Hackathon 2024", icon: "shield" },
+];

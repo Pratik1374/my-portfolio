@@ -10,7 +10,7 @@ const ProjectCard = ({ project, flipDirection = "horizontal" }) => {
   return (
     <div className="flex flex-col items-center m-2">
       <div
-        className="text-xs flex text-white h-8 items-center -mb-2 cursor-pointer px-5 font-semibold border border-b-0 border-violet-500 hover:bg-violet-950 rounded-tl-full rounded-tr-full z-10"
+        className="text-xs flex text-white h-8 items-center  cursor-pointer px-5 font-semibold border border-b-0 border-violet-500 hover:bg-violet-950 rounded-tl-full rounded-tr-full z-10 select-none"
         onClick={handleFlip}
       >
         Click here to Flip
@@ -18,7 +18,7 @@ const ProjectCard = ({ project, flipDirection = "horizontal" }) => {
       <ReactCardFlip isFlipped={isFlipped} flipDirection={flipDirection}>
         {/* Front of the Card */}
         <div
-          className="flex flex-col items-center h-[320px] w-[350px] p-2 m-2 cursor-pointer justify-center rounded-lg overflow-hidden"
+          className="flex flex-col items-center h-[320px] w-[350px] p-2 cursor-pointer justify-center rounded-lg overflow-hidden"
           style={{
             background:
               "linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(50,50,100,0.7) 100%)",
@@ -71,7 +71,7 @@ const ProjectCard = ({ project, flipDirection = "horizontal" }) => {
 
         {/* Back of the Card */}
         <div
-          className="flex flex-col h-[320px] w-[350px] p-2 m-2 cursor-pointer rounded-lg overflow-hidden"
+          className="flex flex-col h-[320px] w-[350px] p-2 cursor-pointer rounded-lg overflow-hidden"
           style={{
             background:
               "linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(50,50,100,0.7) 100%)",
@@ -81,7 +81,7 @@ const ProjectCard = ({ project, flipDirection = "horizontal" }) => {
           <p className="uppercase font-bold text-purple-600 text-center mb-3">
             {project.title}
           </p>
-          <div className="mx-3 my-bg-black-gradient p-3 rounded-md overflow-y-auto">
+          <div className="rounded-md overflow-y-auto">
             {project.description.split("\n").map((line, ind) => (
               <p key={ind} className="text-blue-100 mb-1">
                 {line}

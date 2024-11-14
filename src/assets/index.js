@@ -23,7 +23,7 @@ import csiInAppCertificate from './Certificates/CSI_InApp_Certificate.jpg'
 import codigoCertificate from './Certificates/Codigo_2023_Certificate.png'
 import adcetCertificate from './Certificates/ADCET_Innovation_Certificate.jpg'
 import squidSagaCertificate from './Certificates/SquidSaga_2023_Certificate.png'
-import sihCertificate from './Certificates/SIH_2023_Certificate.jpg'
+import sihCertificate from './Certificates/SIH_2023_Certificate.jpeg'
 
 import storyCopilot from './Work_Screenshots/story_co-pilot.png'
 import sihWebsite from "./Work_Screenshots/sih-home-page.jpg"

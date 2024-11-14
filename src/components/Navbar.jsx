@@ -30,7 +30,7 @@ export const navLinks = [
   },
   {
     id: "certificates",
-    title: "Certificates",
+    title: "Achievements & Certificates",
     icon: <FeatherIcon icon="award" size={"20px"} />,
   },
 ];

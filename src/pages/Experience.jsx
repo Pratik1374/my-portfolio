@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { experience } from "../data/data";
 import { motion, useInView, useAnimation } from "framer-motion";
 import SectionHeading from "../components/SectionHeading";
+import FeatherIcon from "feather-icons-react";
 
 const Experience = () => {
   const ref = useRef(null);
@@ -43,7 +44,7 @@ const Experience = () => {
               ease: "easeOut",
               delay: index * 0.2,
             }}
-            className="ml-[30px] relative -mt-[20px]"
+            className="ml-[15px] md:ml-[30px] relative -mt-[20px]"
           >
             {/* Animated connecting line */}
             <motion.div
@@ -80,9 +81,13 @@ const Experience = () => {
                 href={exp.appLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-500 flex items-center space-x-1 hover:text-purple-400 transition duration-200"
+                className="text-purple-500 flex items-center space-x-1 hover:text-purple-400 transition duration-200 hover:scale-110"
               >
-                <span className="text-xs">View App</span>
+                <FeatherIcon
+                  icon="external-link"
+                  size={16}
+                  className="ml-1 stroke-purple-100 group-hover:stroke-purple-100 transition-colors duration-300"
+                />
               </a>
             </h4>
             <span className="text-sm text-gray-400 italic">{exp.duration}</span>

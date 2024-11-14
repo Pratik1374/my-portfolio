@@ -47,11 +47,6 @@ body {
   background: #030014;
 }
 
-.my-bg-bright-gradient {
-  background: linear-gradient(109.6deg, rgb(32, 38, 48) 11.2%);
-  box-shadow: rgba(214, 131, 249, 0.35) 0px 5px 15px;
-}
-
 .about-card {
   background: linear-gradient(
     109.6deg,
@@ -61,36 +56,12 @@ body {
   box-shadow: rgba(0, 105, 117, 0.35) 0px 5px 15px;
 }
 
-.black-gradient {
-  background: #000000;
-  -webkit-box-shadow: 0px 0px 63px 6px rgba(121, 134, 135, 1);
-  -moz-box-shadow: 0px 0px 63px 6px rgba(121, 134, 135, 1);
-  box-shadow: 0px 0px 63px 6px rgba(121, 134, 135, 1);
-  border: 2px solid gray;
-}
-
-.my-bg-black-gradient {
-  background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #352b2b);
-  background: linear-gradient(to right, #262222, #434343);
-}
-
-.violet-gradient {
-  background: rgb(97, 226, 235);
-  background: linear-gradient(
-    150deg,
-    rgba(0, 149, 160, 0.838) 8%,
-    rgba(36, 47, 48, 0.855) 22%,
-    rgb(0, 0, 0) 88%
-  );
-}
-
 .my-tagline-bg {
   background: linear-gradient(
     109.6deg,
     rgb(11, 15, 76) 91.1% rgb(2, 1, 36) 11.2%
   );
-  box-shadow: rgba(140, 42, 226, 0.35) 1px 5px 15px 3px;
+  box-shadow: rgba(179, 116, 233, 0.35) 1px 5px 15px 3px;
   background-color: black;
 }
 
@@ -199,7 +170,7 @@ body {
 }
 
 .neon-effect {
-  color: #a855f7; /* Purple shade for neon */
+  color: #a855f7;
   text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
 }
 
@@ -209,20 +180,20 @@ body {
 
 .section-heading-wrapper {
   position: relative;
-  margin-bottom: 12; /* Tailwind spacing utility*/
+  margin-bottom: 12;
   display: inline-block;
   filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.2));
   animation: fadeInUp 1s ease;
 }
 
 .section-heading {
-  @apply text-3xl font-bold text-center py-4 px-8 relative z-10; /*Tailwind classes */
-  color: #e8e9ea; /* Adjust as needed for your theme */
+  @apply text-3xl font-bold text-center py-4 px-8 relative z-10;
+  color: #e8e9ea;
 }
 
 .section-heading-wrapper::before {
   content: "";
-  @apply absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[60%] rounded-xl z-0; /*Tailwind*/
+  @apply absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[60%] rounded-xl z-0;
   background: linear-gradient(to right, #bb86fc, #b08bf8);
 }
 
@@ -245,22 +216,39 @@ body.dark-theme .section-heading {
   }
 }
 
-/* Neon Effect for Text */
 .neon-text {
   color: #e0b3ff;
   text-shadow: 0 0 5px #e0b3ff, 0 0 10px #d4a5ff, 0 0 15px #b57dff;
 }
 
-/* Neon Glow for Skills */
 .neon-skill {
   box-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7, 0 0 15px #f472b6;
 }
+
 .neon-skill:hover {
   box-shadow: 0 0 15px #f472b6, 0 0 25px #f472b6;
   transform: scale(1.1);
 }
 
-/* Shadow and neon glow for category nodes */
 .shadow-neon {
   box-shadow: 0 0 5px #c084fc, 0 0 10px #c084fc, 0 0 20px #d8b4fe;
+}
+
+.neon-effect-certificate-timeline {
+  background-color: #440066; /* Soft purple glow */
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.7), 0 0 15px rgba(139, 92, 246, 0.5),
+    0 0 20px rgba(139, 92, 246, 0.4);
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.7),
+      0 0 15px rgba(139, 92, 246, 0.5), 0 0 20px rgba(139, 92, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(139, 92, 246, 1), 0 0 20px rgba(139, 92, 246, 0.8),
+      0 0 30px rgba(139, 92, 246, 0.6);
+  }
 }

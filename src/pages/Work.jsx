@@ -73,7 +73,7 @@ const Work = () => {
           </motion.div>
           <motion.div
             variants={containerVariant}
-            className="flex flex-wrap gap-3 gap-y-8 justify-center mt-3"
+            className="flex flex-wrap gap-4 gap-y-8 justify-center mt-3"
           >
             {myWork.map((work) => (
               <motion.div key={work.title} variants={cardVariant}>

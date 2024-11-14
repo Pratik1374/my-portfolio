@@ -57,25 +57,67 @@ const Home = () => {
           <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] flex flex-col">
             {text}
           </h1>
-          <motion.p
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 2,
-              delay: 0.1,
-              ease: "linear",
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            className="p-2 my-tagline-bg rounded-md max-w-[600px] text-center"
-          >
-            Coding is my canvas, and technology is my palette. Through lines of
-            code and pixels of innovation, I paint immersive digital worlds that
-            inspire, engage, and push the boundaries of what's possible.
-          </motion.p>
+
+          <div className="relative p-2 rounded-md max-w-[600px] text-center">
+            <motion.p
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1.5,
+                delay: 0.1,
+                ease: "linear",
+              }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              className="relative text-white p-4"
+            >
+              Coding is my canvas, and technology is my palette. Through lines
+              of code and pixels of innovation, I paint immersive digital worlds
+              that inspire, engage, and push the boundaries of what's possible.
+            </motion.p>
+
+            <motion.div
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute top-0 left-0 h-[2px] origin-left w-[60%]"
+              style={{
+                background: "linear-gradient(to right, white, transparent)",
+              }}
+            ></motion.div>
+            <motion.div
+              initial={{ scaleY: 0, opacity: 0 }}
+              animate={{ scaleY: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute top-0 left-0 w-[2px] origin-top h-[60%]"
+              style={{
+                background: "linear-gradient(to bottom, white, transparent)",
+              }}
+            ></motion.div>
+
+            <motion.div
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute bottom-0 right-0 h-[2px] origin-right w-[60%]"
+              style={{
+                background: "linear-gradient(to left, white, transparent)",
+              }}
+            ></motion.div>
+            <motion.div
+              initial={{ scaleY: 0, opacity: 0 }}
+              animate={{ scaleY: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute bottom-0 right-0 w-[2px] origin-bottom h-[60%]"
+              style={{
+                background: "linear-gradient(to top, white, transparent)",
+              }}
+            ></motion.div>
+          </div>
+
           <div className="flex w-full h-full items-center justify-center mt-9">
             <ContactBox />
           </div>
           <div className="flex justify-center mt-9">
-            <NeonButton text={"Download Resume"} onClick={handleDownload}/>
+            <NeonButton text={"Download Resume"} onClick={handleDownload} />
           </div>
         </div>
       </div>
