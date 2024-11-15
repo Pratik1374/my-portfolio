@@ -7,6 +7,7 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import Certificates from "./pages/Certificates";
 import Experience from "./pages/Experience";
+import ThankYouConfettiBurst from "./pages/ThankYouSection";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Skills />
         <Work />
         <Certificates/>
-        <Contact />
+        <ThankYouConfettiBurst/>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import { achievements, myCertificates } from "../data/data";
 import SectionHeading from "../components/SectionHeading";
 import FeatherIcon from "feather-icons-react";
@@ -107,13 +107,32 @@ const Certificates = () => {
     };
   }, []);
 
+  const achievementVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        delay: i * 0.1,
+      },
+    }),
+  };
+
+  const achievementsRef = useRef(null); // Ref for the achievements container
+  const achievementsInView = useInView(achievementsRef, {
+    once: false,
+    margin: "-50px 0px",
+  });
+
   const handleCardClick = (index) => {
     setSelectedCard(selectedCard === index ? null : index);
   };
 
   return (
     <section
-      className="w-full h-fit flex flex-col justify-center items-center"
+      className="w-full flex flex-col justify-center items-center"
       ref={containerRef}
       id="certificates"
     >
@@ -124,12 +143,30 @@ const Certificates = () => {
       />
 
       {/* Achievements Section - styled as chips */}
-      <div className="mt-12 flex flex-wrap justify-center gap-4">
+      <motion.div
+        className="mt-12 flex flex-wrap justify-center gap-4"
+        ref={achievementsRef} // Add the ref here
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.1 },
+          },
+        }}
+        initial="hidden"
+        animate={achievementsInView ? "visible" : "hidden"} // Animate based on inView
+      >
         {achievements.map((achievement, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.05 }}
-            className="bg-gray-800 px-4 py-2 rounded-full border border-violet-600 flex items-center gap-2"
+            variants={achievementVariants}
+            custom={index}
+            whileHover={{
+              scale: 1.05,
+              rotate: 5,
+              transition: { type: "spring" },
+            }}
+            className="bg-gray-800 px-4 py-2 rounded-full border border-violet-600 flex items-center gap-2 cursor-pointer"
           >
             {achievement.icon && (
               <FeatherIcon
@@ -141,9 +178,9 @@ const Certificates = () => {
             <span className="text-lg">{achievement.text}</span>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="relative w-full h-fit mt-[220px] md:mt-[300px] flex justify-center items-center">
+      <div className="relative w-full mt-[240px] md:mt-[300px] mb-[100px] flex justify-center items-center">
         <AnimatePresence>
           {myCertificates.map((card, index) => (
             <motion.div
@@ -166,7 +203,7 @@ const Certificates = () => {
                 }
               }
               onClick={() => handleCardClick(index)}
-              className="absolute w-[250px] h-[250px] md:w-[350px] md:h-[300px] bg-white rounded shadow-md cursor-pointer border border-violet-400"
+              className="absolute w-[200px] h-[200px] md:w-[350px] md:h-[300px] bg-white rounded shadow-md cursor-pointer border border-violet-400"
               style={{
                 zIndex:
                   selectedCard === index

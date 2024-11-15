@@ -67,7 +67,7 @@ const Home = () => {
                 ease: "linear",
               }}
               initial={{ opacity: 0, scale: 0.5 }}
-              className="relative text-white p-4"
+              className="relative text-white p-2 "
             >
               Coding is my canvas, and technology is my palette. Through lines
               of code and pixels of innovation, I paint immersive digital worlds

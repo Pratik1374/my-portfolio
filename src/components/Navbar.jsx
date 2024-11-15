@@ -104,8 +104,8 @@ const Navbar = () => {
           style={{
             clipPath:
               "polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)",
-            background: "linear-gradient(45deg, #ff00cc, #3300ff)",
-            boxShadow: "0 0 10px #ff00cc, 0 0 20px #3300ff",
+            background: "linear-gradient(45deg, #00ffff, #0077cc)",
+            boxShadow: "0 0 10px #00ffff, 0 0 20px #0077cc",
           }}
         />
       </button>

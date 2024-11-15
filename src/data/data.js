@@ -67,7 +67,7 @@ export const mySkillsData = [
       "Bootstrap",
       "JavaScript",
     ],
-    shade: "#8B008B", // Darker purple
+    shade: "#DA70D6", // Orchid
   },
   {
     category: "Backend Development",
@@ -89,7 +89,7 @@ export const mySkillsData = [
     category: "Other Skills",
     description: "A collection of other valuable skills and tools I utilize.",
     skills: ["Jest", "C++", "Java", "C", "Git", "GitHub", "Bitbucket"],
-    shade: "#DA70D6", // Orchid
+    shade: "#8B008B", // Darker purple
   },
 ];
 
@@ -224,7 +224,7 @@ export const experience = [
   },
 ];
 
-export  const achievements = [
+export const achievements = [
   { text: "Finalist - Smart India Hackathon 2023", icon: "shield" },
   { text: "1st Place - Braint-It-On 2.0 Hackathon 2024", icon: "shield" },
 ];
