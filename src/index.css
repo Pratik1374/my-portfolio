@@ -291,3 +291,7 @@ body.dark-theme .section-heading {
     height: 200px;
   }
 }
+
+.perspective {
+  perspective: 1000px;
+}

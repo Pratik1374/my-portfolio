@@ -71,13 +71,6 @@ const ThankYouConfettiBurst = () => {
           I appreciate your time and interest in exploring my portfolio. Feel
           free to reach out if you’d like to connect!
         </p>
-        {/* Optional Button */}
-        <a
-          href="#contact"
-          className="inline-block mt-6  text-white border-b px-2 rounded-lg shadow-lg hover:shadow-xl hover:bg-purple-200 transition duration-300"
-        >
-          Let's Connect
-        </a>
         <div className="w-full flex items-center justify-center mt-6">
           <ContactBox />
         </div>
