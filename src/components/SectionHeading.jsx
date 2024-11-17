@@ -49,13 +49,13 @@ const SectionHeading = ({ title, subtitle, icon }) => {
           <motion.div variants={itemVariants}>
             <FeatherIcon
               icon={icon}
-              size="32"
+              size="36"
               className="text-indigo-500 animate-pulse"
             />
           </motion.div>
         )}
         <motion.h2
-          className="text-3xl md:text-4xl font-extrabold text-white tracking-wide"
+          className="relative z-10 text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500"
           variants={itemVariants}
         >
           {title}
@@ -64,7 +64,7 @@ const SectionHeading = ({ title, subtitle, icon }) => {
 
       {subtitle && (
         <motion.p
-          className="mt-2 text-gray-400 text-lg max-w-2xl"
+          className="mt-2 text-gray-200 text-lg max-w-2xl"
           variants={itemVariants}
         >
           {subtitle}

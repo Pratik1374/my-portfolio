@@ -54,7 +54,7 @@ const Home = () => {
 
       <div className="flex items-center justify-center mt-[100px] md:mt-[50px] z-50">
         <div className="flex flex-col gap-2 items-center justify-center">
-          <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] flex flex-col">
+          <h1 className="mx-[20px] lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] flex flex-col relative z-10 text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-200 to-blue-200">
             {text}
           </h1>
 
