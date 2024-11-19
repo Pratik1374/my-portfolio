@@ -1,40 +1,51 @@
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { SiGithub, SiGmail } from "react-icons/si";
+import FeatherIcon from "feather-icons-react";
+import { motion } from "framer-motion";
+
+const socialLinks = [
+  {
+    platform: "github",
+    url: "https://github.com/Pratik1374/",
+  },
+  {
+    platform: "mail",
+    url: "mailto:pratik1374@gmail.com",
+  },
+  {
+    platform: "linkedin",
+    url: "https://www.linkedin.com/in/pratik-jadhav-7a969920b",
+  },
+];
 
 const ContactBox = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, delayChildren: 0.2, staggerChildren: 0.2} },
+  };
+
   return (
-    <div className="flex gap-10">
-      <a
-        href="https://github.com/Pratik1374/"
+    <motion.div className="flex gap-10" variants={variants}
+    initial="hidden"
+    animate="visible">
+      {socialLinks.map((link) => (
+        <motion.a
+        key={link.platform}
+        href={link.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"
-        style={{boxShadow: "0px 2px 28px 1px rgba(83,229,242,1)"}}
-      >
-        <SiGithub />
-      </a>
-
-      <a
-        href="mailto:pratik1374@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"
-        style={{boxShadow: "0px 2px 28px 1px rgba(83,229,242,1)"}}
-      >
-        <SiGmail />
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/pratik-jadhav-7a969920b"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="p-3 hover:bg-sky-200 rounded-xl bg-cyan-500 text-black text-xl"
-        style={{boxShadow: "0px 2px 28px 1px rgba(83,229,242,1)"}}
-      >
-        <FaLinkedinIn />
-      </a>
-    </div>
+        className={`p-3 hover:bg-gray-900 rounded-xl text-black text-xl bg-black border border-purple-200`}
+        whileHover={{ scale: 1.1, backgroundColor: "rgb(17 24 39 / #111827) " }} // Hover animation
+        whileTap={{ scale: 0.9 }} // Tap/click animation
+        transition={{ type: "spring", stiffness: 40, damping: 4 }}
+           variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <FeatherIcon icon={link.platform} size={"20px"} fill="white" />
+        </motion.a>
+      ))}
+    </motion.div>
   );
 };
 

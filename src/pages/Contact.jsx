@@ -55,28 +55,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-// import { motion } from 'framer-motion';
-// import Bubbles from '../components/Bubbles';
-
-// const Contact = () => {
-//   return (
-//     // <div className="bubbles-container">
-//     //   <h1>Bubbles Animation</h1>
-//     //   <motion.div
-//     //     className="bubble"
-//     //     initial={{ y: 0, scale: 1, opacity: 1 }}
-//     //     animate={{ y: -200, scale: 0, opacity: 0 }}
-//     //     transition={{ duration: 4, repeat: Infinity }}
-//     //   />
-//     //   {/* Add more bubbles as needed */}
-//     // </div>
-//     <section id='contact'>
-//       {/* Your other components */}
-//       <Bubbles id="unique-bubbles-id"  color="100,200,255" />
-//     </section>
-//   );
-// };
-
-// export default Contact;

@@ -1,13 +1,15 @@
 import React from "react";
-import { profileImg } from "../assets";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { resumePDF } from "../assets";
-import Bubbles from "../components/Bubbles";
+import semicircleGlowImg from "../assets/semicircle-glow.png";
+import NeonParticlesBackground from "../components/NeonParticles";
+import ContactBox from "../components/ContactBox";
+import NeonButton from "../components/Button";
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["Pratik Sukhadev Jadhav"],
+    words: ["Hi, I'm Pratik Jadhav"],
     typeSpeed: 60,
     delaySpeed: 2000,
   });
@@ -19,7 +21,7 @@ const Home = () => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "Pratik_Resume.pdf"; // Change the file name if needed
+        a.download = "Pratik_Resume.pdf";
         a.click();
         URL.revokeObjectURL(url);
       })
@@ -41,58 +43,80 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="my-bg-dark-gradient text-white relative w-full h-[100vh] mx-auto py-20 flex flex-wrap items-center "
+      className="text-white relative w-full h-screen md:max-h-[1000px] flex justify-center items-center "
     >
-      <div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          style={{ display: showBubbles ? "block" : "none" }}
-        >
-          <Bubbles id="unique-bubbles-id" color="100,200,255" />
-        </motion.div>
+      <div className="absolute top-0 left-0 w-[900px] h-[900px] -translate-x-[45%] -translate-y-[50%] rotate-[135deg]">
+        <img src={semicircleGlowImg} alt="" className="w-full h-full" />
       </div>
-      
-      <div className="w-full h-1/2 flex items-center justify-center">
-        <div className="flex flex-col ">
-          <h1 className="mx-[20px] font-black text-white lg:text-[40px] sm:text-[40px] xs:text-[50px] text-[40px] flex flex-col ">
-            <span className="text-[30px] lg:text-[40px]">Hi, I'm </span>
-            <div>
-              <span
-                className="text-[#915EFF] text-[30px] lg:text-[40px] drop-shadow-lg  shadow-white"
-                style={{ textShadow: "1px 1px 19px rgba(143, 53, 255, 1)" }}
-              >
-                {text}
-              </span>
-              <Cursor
-                cursorBlinking={false}
-                cursorStyle="|"
-                cursorColor="#a44aff"
-              />
-            </div>
+
+      <NeonParticlesBackground />
+
+      <div className="flex items-center justify-center mt-[100px] md:mt-[50px] z-50">
+        <div className="flex flex-col gap-2 items-center justify-center">
+          <h1 className="mx-[20px] lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] flex flex-col relative z-10 text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-200 to-blue-200">
+            {text}
           </h1>
-          <motion.p
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 2,
-              delay: 0.1,
-              ease: "linear",
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            className=" p-2 my-tagline-bg mx-[20px] mt-4 rounded-md max-w-[600px]"
-          >
-            "Coding is my canvas, and technology is my palette. Through lines of
-            code and pixels of innovation, I paint immersive digital worlds that
-            inspire, engage, and push the boundaries of what's possible."
-          </motion.p>
-          <div className=" flex justify-center pt-10 lg:pt-20">
-            <button
-              className="bg-cyan-400 text-black font-semibold p-2 rounded-lg  hover:scale-105 z-10"
-              onClick={handleDownload}
+
+          <div className="relative p-2 rounded-md max-w-[600px] text-center mt-4">
+            <motion.p
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1.5,
+                delay: 0.1,
+                ease: "linear",
+              }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              className="relative text-white p-2 "
             >
-              Download Resume
-            </button>
+              Coding is my canvas, and technology is my palette. Through lines
+              of code and pixels of innovation, I paint immersive digital worlds
+              that inspire, engage, and push the boundaries of what's possible.
+            </motion.p>
+
+            <motion.div
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute top-0 left-0 h-[2px] origin-left w-[60%]"
+              style={{
+                background: "linear-gradient(to right, white, transparent)",
+              }}
+            ></motion.div>
+            <motion.div
+              initial={{ scaleY: 0, opacity: 0 }}
+              animate={{ scaleY: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute top-0 left-0 w-[2px] origin-top h-[60%]"
+              style={{
+                background: "linear-gradient(to bottom, white, transparent)",
+              }}
+            ></motion.div>
+
+            <motion.div
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute bottom-0 right-0 h-[2px] origin-right w-[60%]"
+              style={{
+                background: "linear-gradient(to left, white, transparent)",
+              }}
+            ></motion.div>
+            <motion.div
+              initial={{ scaleY: 0, opacity: 0 }}
+              animate={{ scaleY: 1, opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute bottom-0 right-0 w-[2px] origin-bottom h-[60%]"
+              style={{
+                background: "linear-gradient(to top, white, transparent)",
+              }}
+            ></motion.div>
+          </div>
+
+          <div className="flex w-full h-full items-center justify-center mt-9">
+            <ContactBox />
+          </div>
+          <div className="flex justify-center mt-9">
+            <NeonButton text={"Download Resume"} onClick={handleDownload} />
           </div>
         </div>
       </div>
