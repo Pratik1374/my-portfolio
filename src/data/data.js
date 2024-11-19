@@ -120,7 +120,7 @@ export const myCertificates = [
   },
 ];
 
-export const myWork = [
+export const myProjects = [
   {
     title: "Story_Co-Pilot: AI-Powered Platform for Story Writers",
     description:
@@ -163,7 +163,7 @@ export const myWork = [
   },
 ];
 
-export const teamWork = [
+export const teamProjects = [
   {
     title: "Local Document Summarization Website (SIH 2023)",
     description:

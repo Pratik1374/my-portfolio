@@ -30,7 +30,7 @@ const ThankYouConfettiBurst = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative flex items-center justify-center w-full mt-[700px] text-white pb-16"
+      className="relative flex items-center justify-center w-full mt-[700px] text-white pb-16 pt-6"
       id="thank-you"
     >
       {/* Confetti */}

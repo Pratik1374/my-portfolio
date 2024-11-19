@@ -132,7 +132,7 @@ const Certificates = () => {
 
   return (
     <section
-      className="w-full flex flex-col justify-center items-center"
+      className="w-full flex flex-col justify-center items-center pt-6"
       ref={containerRef}
       id="certificates"
     >

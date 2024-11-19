@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full flex flex-col items-center justify-center relative"
+      className="w-full flex flex-col items-center justify-center relative pt-6"
     >
       <SectionHeading
         title="Skills"

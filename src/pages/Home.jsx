@@ -1,5 +1,4 @@
 import React from "react";
-import { profileImg } from "../assets";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { resumePDF } from "../assets";
@@ -58,7 +57,7 @@ const Home = () => {
             {text}
           </h1>
 
-          <div className="relative p-2 rounded-md max-w-[600px] text-center">
+          <div className="relative p-2 rounded-md max-w-[600px] text-center mt-4">
             <motion.p
               animate={{ opacity: 1, scale: 1 }}
               transition={{

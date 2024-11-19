@@ -24,7 +24,7 @@ const About = () => {
     <section
       id="about"
       ref={ref}
-      className="relative flex flex-col items-center justify-center h-screen max-h-[1000px] p-10"
+      className="relative flex flex-col items-center justify-center pt-6"
     >
       {/* Decorative Elements */}
       <motion.div
@@ -44,23 +44,25 @@ const About = () => {
 
       {/* Content Section */}
       <motion.div
-        className="relative z-10 flex flex-col lg:flex-row gap-12 items-center mt-12"
+        className="relative w-full z-10 flex items-center justify-center flex-col lg:flex-row gap-12 mt-8"
         variants={fadeIn}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
         {/* Left Block */}
-        <div className="relative max-w-md text-center lg:text-left p-6 shadow-lg bg-white/10 backdrop-blur-lg rounded-lg border border-white/10 ">
+        <div className="relative w-full max-w-[500px] text-center lg:text-left p-3 md:p-6 shadow-lg bg-gray-900/20 backdrop-blur-lg rounded-lg border border-white/10 ">
           <h2 className="text-2xl font-bold text-purple-500 mb-4">
             Software Developer
           </h2>
           <p className="text-gray-200 leading-relaxed">
-            I'm a software developer specializing in building and optimizing web
-            applications using React, Next.js, and Node.js. I'm passionate about
-            creating efficient and user-friendly solutions, with a focus on
-            performance and scalability. My experience includes developing SaaS
-            applications, integrating LLMs into web platforms, and leading
-            successful hackathon projects.
+            I'm a software developer specializing in building and optimizing
+            scalable web applications using React, Next.js, Node.js, and
+            TypeScript. I focus on performance and user experience, integrating
+            features like large language models (LLMs) such as Gemini and Llama,
+            and implementing robust authentication and caching strategies. My
+            experience includes developing SaaS products and contributing to
+            award-winning hackathon projects, with backend expertise in Express
+            and databases like PostgreSQL and MongoDB.
           </p>
         </div>
 
@@ -115,7 +117,7 @@ const About = () => {
 
       {/* Footer Highlight */}
       <motion.div
-        className="relative mt-12 py-4 px-8 rounded-full shadow-xl bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold cursor-pointer hover:scale-105 transition-transform"
+        className="relative mt-12 py-2 px-4 md:py-4 md:px-8 rounded-full shadow-xl bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold cursor-pointer hover:scale-105 transition-transform text-center"
         variants={floatingEffect}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

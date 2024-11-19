@@ -135,7 +135,7 @@ const Navbar = () => {
                     left: `${x}px`,
                     top: `${y}px`,
                   }}
-                  className="p-2 rounded-full overflow-visible bg-gray-800 md:hover:bg-gray-700 focus:outline-none text-white flex items-center justify-center relative group"
+                  className="p-2 rounded-full overflow-visible bg-black md:hover:bg-gray-800 focus:outline-none text-white border border-cyan-50 flex items-center justify-center relative group"
                 >
                   <span>{link.icon}</span>
                   <span
