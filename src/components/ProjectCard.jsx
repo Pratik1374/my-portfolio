@@ -18,7 +18,7 @@ const ProjectCard = ({ project, flipDirection = "horizontal" }) => {
       <ReactCardFlip isFlipped={isFlipped} flipDirection={flipDirection}>
         {/* Front of the Card */}
         <div
-          className="flex flex-col items-center h-[320px] w-[350px] p-2 cursor-pointer justify-center rounded-lg overflow-hidden"
+          className="flex flex-col items-center h-[320px] w-[350px] p-2 justify-center rounded-lg overflow-hidden"
           style={{
             background:
               "linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(50,50,100,0.7) 100%)",
@@ -71,7 +71,7 @@ const ProjectCard = ({ project, flipDirection = "horizontal" }) => {
 
         {/* Back of the Card */}
         <div
-          className="flex flex-col h-[320px] w-[350px] p-2 cursor-pointer rounded-lg overflow-hidden"
+          className="flex flex-col h-[320px] w-[350px] p-2 rounded-lg overflow-y-auto"
           style={{
             background:
               "linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(50,50,100,0.7) 100%)",

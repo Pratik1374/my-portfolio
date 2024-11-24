@@ -5,21 +5,18 @@ import ProjectCard from "../components/ProjectCard";
 import { motion, useInView } from "framer-motion";
 
 const Projects = () => {
-  // Refs for in-view triggers
   const personalProjectsRef = useRef(null);
   const groupProjectsRef = useRef(null);
 
-  // useInView hook to detect when each section is in the viewport
   const personalProjectsInView = useInView(personalProjectsRef, { once: true });
   const groupProjectsInView = useInView(groupProjectsRef, { once: true });
 
-  // Animation variants for the sections and cards
   const sectionVariant = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] }, // Smooth easing curve
+      transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] },
     },
   };
 
