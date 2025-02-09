@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     platform: "linkedin",
-    url: "https://www.linkedin.com/in/pratik-jadhav-7a969920b",
+    url: "https://www.linkedin.com/in/pratik1374",
   },
 ];
 

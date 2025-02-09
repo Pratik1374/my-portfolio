@@ -56,39 +56,52 @@ export const mySkillsData = [
   {
     category: "Frontend Development",
     description:
-      "Crafting beautiful and interactive user interfaces with modern web technologies.",
+      "Developing responsive and performant web applications with a focus on user experience and modern JavaScript frameworks.",
     skills: [
-      "React",
-      "Next.js",
+      "ReactJS",
+      "NextJS",
+      "Tailwind CSS",
+      "Redux",
+      "Bootstrap",
+      "JavaScript",
       "TypeScript",
       "HTML",
       "CSS",
-      "Tailwind CSS",
-      "Bootstrap",
-      "JavaScript",
+      "NextUI",
     ],
     shade: "#DA70D6", // Orchid
   },
   {
     category: "Backend Development",
-    description: "Building robust and scalable server-side logic and APIs.",
+    description:
+      "Designing and implementing scalable server-side logic, APIs, and database solutions to power web applications.",
     skills: [
-      "Node.js",
+      "NodeJS",
       "Express",
       "PostgreSQL",
-      "Firebase",
       "MongoDB",
-      "SQL",
       "Redis",
+      "SQL",
       "REST API",
       "GraphQL",
+      "Firebase",
     ],
     shade: "#9400D3", // Dark Violet
   },
   {
     category: "Other Skills",
-    description: "A collection of other valuable skills and tools I utilize.",
-    skills: ["Jest", "C++", "Java", "C", "Git", "GitHub", "Bitbucket"],
+    description:
+      "Proficient in a range of programming languages and tools essential for software development and version control.",
+    skills: [
+      "Jest",
+      "C++",
+      "Java",
+      "C",
+      "Python",
+      "Git",
+      "GitHub",
+      "Bitbucket",
+    ],
     shade: "#8B008B", // Darker purple
   },
 ];
@@ -188,10 +201,13 @@ export const experience = [
     role: "Software Developer",
     duration: "September 2024 - Present",
     description: [
-      "Designed and optimized complex SQL queries to enhance data retrieval and management, improving the efficiency of backend operations.",
-      "Enhanced the SEO of the React application by implementing structured data with JSON-LD and using the Helmet package for better metadata management. Optimized images and lazy-loaded content, resulting in better search engine visibility and improved user traffic.",
+      "Independently manage the frontend and backend development of an application with 2000+ user registrations and 8000+ monthly active users.",
+      "Built and maintained 100% of the frontend using React.js and Next.js, ensuring responsive design and seamless user interactions.",
+      "Developed approximately 90% of the backend using Node.js, Express, and PostgreSQL, optimizing database operations and API performance.",
+      "Implemented state management with Redux to enhance application scalability and maintainability.",
+      "Utilized Next.js features such as Static Site Generation (SSG) and Incremental Static Regeneration (ISR) to improve performance and SEO for the blog feature.",
+      "Created and managed automated tasks and workflows using Node.js cron jobs, streamlining backend processes.",
       "Worked on algorithms related to text analysis, including sentiment analysis, and applied these algorithms via the ChatGPT API to generate and refine outputs that meet specific requirements.",
-      "Engaged in prompt engineering to optimize API interactions, refining prompts to ensure high-quality and accurate responses, thereby improving overall user satisfaction.",
     ],
     appLink: "https://applybuddy.co",
   },

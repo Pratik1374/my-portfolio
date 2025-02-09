@@ -55,14 +55,32 @@ const About = () => {
             Software Developer
           </h2>
           <p className="text-gray-200 leading-relaxed">
-            I'm a software developer specializing in building and optimizing
-            scalable web applications using React, Next.js, Node.js, and
-            TypeScript. I focus on performance and user experience, integrating
-            features like large language models (LLMs) such as Gemini and Llama,
-            and implementing robust authentication and caching strategies. My
-            experience includes developing SaaS products and contributing to
-            award-winning hackathon projects, with backend expertise in Express
-            and databases like PostgreSQL and MongoDB.
+            Full-Stack Developer and Founding Engineer at{" "}
+            <a
+              className="underline text-purple-200"
+              href="https://applybuddy.co"
+              target="_blank"
+            >
+              ApplyBuddy
+            </a>
+            , where I independently built and currently maintain applications
+            serving over 2,000 registered users and 8,000 monthly active users.
+            I developed 100% of the responsive frontend using React and Next.js,
+            and approximately 90% of the backend using Node.js, Express, and
+            PostgreSQL. My work also includes optimizing database performance,
+            implementing features using AI (ChatGPT, Gemini API, LLM
+            fine-tuning), and driving key technical decisions in an early-stage
+            startup environment. I've also built standalone AI-powered
+            applications like{" "}
+            <a
+              className="underline text-purple-200"
+              href="https://story-copilot.vercel.app/"
+              target="_blank"
+            >
+              Story Co-Pilot
+            </a>
+            . Hackathon winner (Smart India Hackathon Finalist, Braint-It-On 2.0
+            Winner).
           </p>
         </div>
 
@@ -86,6 +104,24 @@ const About = () => {
 
           <div className="flex items-center gap-4">
             <motion.div
+              className="h-6 w-6 rounded-full bg-blue-600"
+              variants={floatingEffect}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            ></motion.div>
+            <span>LinkedIn: </span>
+            <a
+              href="https://www.linkedin.com/in/pratik1374"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:underline"
+            >
+              linkedin.com/in/pratik1374
+            </a>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <motion.div
               className="h-6 w-6 rounded-full bg-pink-500"
               variants={floatingEffect}
               initial="hidden"
@@ -104,7 +140,7 @@ const About = () => {
 
           <div className="flex items-center gap-4">
             <motion.div
-              className="h-6 w-6 rounded-full bg-blue-500"
+              className="h-6 w-6 rounded-full bg-[#bffcd3]"
               variants={floatingEffect}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
